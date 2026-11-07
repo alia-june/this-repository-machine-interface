@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "kind": "repository_orientation_hook",
+  "execution_mode": "declarative",
+  "manifest": "readme.json",
+  "steps": [
+    {
+      "id": "load_manifest",
+      "instruction": "Resolve the manifest relative to this file and verify the supported schema version."
+    },
+    {
+      "id": "discover_repositories",
+      "instruction": "Use the manifest's discovery endpoint, pagination, and owner filter with the client's existing GitHub access."
+    },
+    {
+      "id": "select_repository",
+      "instruction": "Select an accessible repository relevant to the current task. Ask for clarification if the target is ambiguous."
+    },
+    {
+      "id": "read_project_sources",
+      "instruction": "Use the task's requested revision, or resolve the selected repository's default branch to a commit. At that revision, read applicable repository instructions and documentation for the task."
+    },
+    {
+      "id": "record_context",
+      "instruction": "Record the selected repository's full name, commit SHA, and paths consulted."
+    }
+  ],
+  "authorization": {
+    "scope": "read_only_orientation",
+    "on_missing_access": "Report the access limitation and stop the affected orientation step.",
+    "beyond_orientation": "Follow the user's scope and approval requirements and the selected project's applicable instructions before proceeding."
+  }
+}

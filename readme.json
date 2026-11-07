@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "kind": "repository_orientation_manifest",
+  "repository": "alia-june/mARS-Live-AI-Interface-Bridge-and-Services",
+  "purpose": "Help AI clients discover and orient to repositories owned by alia-june.",
+  "discovery": {
+    "provider": "github",
+    "owner_login": "alia-june",
+    "authenticated_endpoint": "https://api.github.com/user/repos?affiliation=owner,collaborator,organization_member&per_page=100",
+    "public_endpoint": "https://api.github.com/users/alia-june/repos?per_page=100",
+    "pagination": "Follow GitHub Link headers with rel=next until exhausted.",
+    "owner_filter": {
+      "field": "owner.login",
+      "equals": "alia-june",
+      "case_sensitive": false
+    },
+    "access": "Use the client's existing GitHub access. Results are limited to repositories visible to that client."
+  },
+  "orientation_hook": "ai.hook.json"
+}
