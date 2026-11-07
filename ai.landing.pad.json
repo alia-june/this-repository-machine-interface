@@ -79,7 +79,7 @@
         "identification": {
           "designation": {
             "$context-ref": {
-              "context": "active",
+              "context": "ctx:page",
               "item": "identification.designation"
             }
           },
@@ -91,7 +91,7 @@
           },
           "contextual-role": {
             "$context-ref": {
-              "context": "active",
+              "context": "ctx:page",
               "item": "identification.contextual-role"
             }
           },
@@ -167,7 +167,7 @@
           },
           "purpose": {
             "$context-ref": {
-              "context": "active",
+              "context": "ctx:page",
               "item": "structure.use.purpose"
             }
           },
@@ -227,7 +227,7 @@
           },
           "constraints": {
             "$context-ref": {
-              "context": "active",
+              "context": "ctx:page",
               "item": "structure.use.constraints"
             }
           }
@@ -1370,6 +1370,48 @@
               },
               "status": "INACTIVE_UNVERIFIED"
             }
+          },
+          "ctx:page": {
+            "identification.designation": {
+              "target": {
+                "context": "ctx:page",
+                "item": "identification.designation"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "DECLARED"
+            },
+            "identification.contextual-role": {
+              "target": {
+                "context": "ctx:page",
+                "item": "identification.contextual-role"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "DECLARED"
+            },
+            "structure.use.purpose": {
+              "target": {
+                "context": "ctx:page",
+                "item": "structure.use.purpose"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "DECLARED"
+            },
+            "structure.use.constraints": {
+              "target": {
+                "context": "ctx:page",
+                "item": "structure.use.constraints"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "DECLARED"
+            }
           }
         }
       }
@@ -1600,6 +1642,15 @@
           "safe-copy.validation-evidence": {
             "$sentinel": "UNRECORDED"
           }
+        },
+        "ctx:page": {
+          "identification.designation": "AI Landing Pad",
+          "identification.contextual-role": "orientation_entry",
+          "structure.use.purpose": "Establish repository context and locate orientation material.",
+          "structure.use.constraints": [
+            "Reference only. Authority remains with the applicable user and system.",
+            "Use the caller existing access and repository scope."
+          ]
         }
       }
     }
