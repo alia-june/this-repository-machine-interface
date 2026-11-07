@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "kind": "repository_orientation_manifest",
-  "repository": "alia-june/mARS-Live-AI-Interface-Bridge-and-Services",
+  "repository": "alia-june/this-repository-machine-interface",
   "purpose": "Machine-readable man-machine interface for orienting AI to repository requests in chat.",
   "discovery": {
     "provider": "github",
@@ -69,6 +69,13 @@
         "Instrumentation/mill-controllers/creation/controller.py",
         "Instrumentation/PUBLICATION_VALIDATION.md"
       ]
+    },
+    "workplace_seed": {
+      "status": "public_review",
+      "repository": "alia-june/xOSG-prototype",
+      "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
+      "path": "docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json",
+      "review_url": "https://github.com/alia-june/xOSG-prototype/pull/16"
     }
   }
 }

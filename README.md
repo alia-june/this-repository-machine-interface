@@ -1,4 +1,4 @@
-# mARS Man–Machine Interface
+# This Repository Machine Interface
 
 mARS provides machine-readable reference material for AI handling repository requests in chat across the alia-june GitHub account.
 
