@@ -1,0 +1,57 @@
+{
+  "construct": {
+    "block-0": {
+      "self": {
+        "identification": {
+          "designation": {
+            "$context-ref": {
+              "context": "ctx:page",
+              "item": "identification.designation"
+            }
+          }
+        }
+      }
+    },
+    "block-1": {
+      "safeguards": {
+        "mode": "reference_only"
+      }
+    },
+    "block-2": {
+      "arbitrary-data": {
+        "schema_version": "1.0",
+        "kind": "ai_low_memory_landing_pad",
+        "repository": "alia-june/this-repository-machine-interface",
+        "purpose": "Orient an AI to a repository request with a small initial read.",
+        "first_step": "Read only the route needed for the current request. Use the full landing pad when broader discovery or orientation is needed.",
+        "routes": {
+          "full_orientation": "ai.landing.pad.json",
+          "request_admission": "ai.ingress.json",
+          "operation_and_handoff": "ai.launch.pad.json",
+          "response_and_disclosure": "ai.egress.json"
+        }
+      }
+    },
+    "block-3": {
+      "context-index": {
+        "matches": {
+          "ctx:page": {
+            "identification.designation": {
+              "target": {
+                "context": "ctx:page",
+                "item": "identification.designation"
+              }
+            }
+          }
+        }
+      }
+    },
+    "block-4": {
+      "context-records": {
+        "ctx:page": {
+          "identification.designation": "AI Low-Memory Landing Pad"
+        }
+      }
+    }
+  }
+}
