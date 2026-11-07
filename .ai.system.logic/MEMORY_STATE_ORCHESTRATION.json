@@ -5,37 +5,37 @@
         "ego": {
           "self-identification": {
             "self-description": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.self-description"
               }
             },
             "self-assessed-value": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.self-assessed-value"
               }
             },
             "self-assessed-worth": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.self-assessed-worth"
               }
             },
             "self-assessed-necessity": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.self-assessed-necessity"
               }
             },
             "self-assessed-criticality": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.self-assessed-criticality"
               }
             },
             "known-limitations": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.self-identification.known-limitations"
               }
@@ -43,13 +43,13 @@
           },
           "secrets": {
             "protected-information": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.secrets.protected-information"
               }
             },
             "disclosure-boundaries": {
-              "$cry-ref": {
+              "$context-ref": {
                 "context": "core",
                 "item": "ego.secrets.disclosure-boundaries"
               }
@@ -58,19 +58,19 @@
         },
         "core": {
           "lineage": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "core",
               "item": "core.lineage"
             }
           },
           "constitution": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "core",
               "item": "core.constitution"
             }
           },
           "continuity": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "core",
               "item": "core.continuity"
             }
@@ -78,25 +78,25 @@
         },
         "identification": {
           "designation": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "identification.designation"
             }
           },
           "external-identifiers": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "identification.external-identifiers"
             }
           },
           "contextual-role": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "identification.contextual-role"
             }
           },
           "affiliations": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "identification.affiliations"
             }
@@ -105,128 +105,128 @@
       },
       "structure": {
         "components": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.components"
           }
         },
         "relations": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.relations"
           }
         },
         "boundaries": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.boundaries"
           }
         },
         "dependencies": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.dependencies"
           }
         },
         "expressed": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.expressed"
           }
         },
         "displayed": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.displayed"
           }
         },
         "observed": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.observed"
           }
         },
         "disclosure-status": {
-          "$cry-ref": {
+          "$context-ref": {
             "context": "active",
             "item": "structure.disclosure-status"
           }
         },
         "use": {
           "reported-use": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.reported-use"
             }
           },
           "observed-use": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.observed-use"
             }
           },
           "purpose": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.purpose"
             }
           },
           "reason": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.reason"
             }
           },
           "cause": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.cause"
             }
           },
           "necessity": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.necessity"
             }
           },
           "means": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.means"
             }
           },
           "instrument": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.instrument"
             }
           },
           "method": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.method"
             }
           },
           "mode": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.mode"
             }
           },
           "manner": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.manner"
             }
           },
           "beneficiary": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.beneficiary"
             }
           },
           "constraints": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "active",
               "item": "structure.use.constraints"
             }
@@ -272,43 +272,43 @@
         "safe-copy": {
           "status": "DISABLED",
           "source": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.source"
             }
           },
           "destination": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.destination"
             }
           },
           "expected-generation": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.expected-generation"
             }
           },
           "validation-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.validation-evidence"
             }
           },
           "copy-receipt": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.copy-receipt"
             }
           },
           "integrity-proof": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.integrity-proof"
             }
           },
           "source-protection-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "safe-copy.source-protection-evidence"
             }
@@ -322,43 +322,43 @@
         "backup": {
           "status": "DISABLED",
           "backup-destination": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.backup-destination"
             }
           },
           "source-generation": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.source-generation"
             }
           },
           "retention-policy": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.retention-policy"
             }
           },
           "backup-manifest": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.backup-manifest"
             }
           },
           "verification-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.verification-evidence"
             }
           },
           "restore-point": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.restore-point"
             }
           },
           "independent-copy-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "backup.independent-copy-evidence"
             }
@@ -371,37 +371,37 @@
         "fallback": {
           "status": "DISABLED",
           "candidate": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.candidate"
             }
           },
           "eligibility-conditions": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.eligibility-conditions"
             }
           },
           "required-capabilities": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.required-capabilities"
             }
           },
           "authority-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.authority-evidence"
             }
           },
           "compatibility-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.compatibility-evidence"
             }
           },
           "handoff-receipt": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "fallback.handoff-receipt"
             }
@@ -414,43 +414,43 @@
         "recovery": {
           "status": "DISABLED",
           "failure-record": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.failure-record"
             }
           },
           "recovery-plan": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.recovery-plan"
             }
           },
           "authorizing-actor": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.authorizing-actor"
             }
           },
           "last-verified-checkpoint": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.last-verified-checkpoint"
             }
           },
           "validation-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.validation-evidence"
             }
           },
           "reconstruction-source": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.reconstruction-source"
             }
           },
           "recovery-receipt": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "recovery.recovery-receipt"
             }
@@ -464,31 +464,31 @@
         "integrity": {
           "status": "DISABLED",
           "validation-policy": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "integrity.validation-policy"
             }
           },
           "expected-digest": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "integrity.expected-digest"
             }
           },
           "measured-digest": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "integrity.measured-digest"
             }
           },
           "witness": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "integrity.witness"
             }
           },
           "verification-receipt": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "integrity.verification-receipt"
             }
@@ -502,31 +502,31 @@
         "audit": {
           "status": "DISABLED",
           "event-stream": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "audit.event-stream"
             }
           },
           "fault-record": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "audit.fault-record"
             }
           },
           "provenance-record": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "audit.provenance-record"
             }
           },
           "transition-history": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "audit.transition-history"
             }
           },
           "approval-evidence": {
-            "$cry-ref": {
+            "$context-ref": {
               "context": "safety",
               "item": "audit.approval-evidence"
             }
