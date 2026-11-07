@@ -88,6 +88,8 @@ The [repository lookup project seed](construction/examples/ai.repository-lookup-
 
 The [repository lookup project germ](construction/examples/ai.repository-lookup-project-germ.json) is the compact next step. It points back to the pinned project seed, starts with one documentation lookup, and preserves the request context if a required reference fails.
 
+See [Decomposting Theory](human.DECOMPOSTING_THEORY.md) for recovery and recomposition, recursive transmigration, and the quadrangle of proper construction.
+
 ## Eject a seed after review
 
 Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For the Mill Factory example, an illustrative deployment seed could carry:
