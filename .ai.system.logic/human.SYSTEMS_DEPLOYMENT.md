@@ -58,6 +58,16 @@ For a paper walkthrough, take slug **orientation-demo**, date **2026-11-07**, an
 
 Read admission, process outcome, reported creation, structural verification, retained state, and next permitted action separately. Published validation records 13 passing creation-controller cases for the declared suite. This walkthrough traces the cases against source and makes no runtime or total credit-savings claim.
 
+## Advanced technique for low-memory and bare-metal work
+
+**Take the seed → eject a germ immediately → grow from the germ.**
+
+Resolve the seed at a pinned revision. Before binding tools or growing the workplace, eject a compact germ with its own identity, a source seed reference, an initial memory-state value and condition, one growth goal, and the capability and local binding needed for the first step. Keep detailed contracts, source material, and evidence in their own records. A receiving system can resolve them as each step needs them.
+
+The [Mill History germ](state/examples/ai.mill-history-germ.json) starts with an unknown History value and one goal: establish History from a reviewed batch receipt. The sentinel permits an evidence read through the declared receipt capability. An unbound reader routes to a binding request while the germ remains available for handoff. An authorized read with accepted receipt evidence can produce a new germ revision with the established History value and its provenance.
+
+If the dependent step fails, preserve the last committed germ and record the attempt separately for the surrounding system to handle. The compact germ reduces the initial record size. Actual memory use depends on how the receiving system loads references and tools.
+
 ## Eject a seed after review
 
 Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For the Mill Factory example, an illustrative deployment seed could carry:

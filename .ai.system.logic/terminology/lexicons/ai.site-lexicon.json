@@ -731,6 +731,20 @@
               "path": ".ai.system.logic/construction/contracts/ai.safe-copy.json",
               "selector": "/construct/block-2/arbitrary-data"
             }
+          },
+          "germ": {
+            "label": "Germ",
+            "definition": "A compact, independently identified starting record ejected immediately from a pinned seed before growth. It carries one goal, initial state and condition, and references to the tooling and context needed for the first step.",
+            "source_references": [
+              {
+                "kind": "user_supplied_design_direction",
+                "summary": "Take the seed, immediately eject a germ, and grow from the germ for low-memory or bare-metal work."
+              }
+            ],
+            "example_reference": {
+              "path": ".ai.system.logic/state/examples/ai.mill-history-germ.json",
+              "selector": "/construct/block-2/arbitrary-data"
+            }
           }
         }
       }
