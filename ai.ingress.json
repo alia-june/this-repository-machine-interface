@@ -549,10 +549,9 @@
           "authority for the requested operation"
         ],
         "acceptance": [
-          "Resolve the applicable context.",
-          "Check source identity and the declared contract.",
-          "Verify access and authority for the dependent operation.",
-          "Retain unresolved or denied conditions and return them to the calling AI."
+          "Apply the request envelope to establish scope.",
+          "For repository lookup, follow the referenced request contract for field requirements, source resolution, and admission outcomes.",
+          "Return missing context, invalid input, or denied access through the response boundary."
         ],
         "exchange_version": "1.0",
         "egress_contract": "ai.egress.json",

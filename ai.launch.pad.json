@@ -584,6 +584,17 @@
               "Identify the evidence and receiving-workplace bindings required for seed ejection.",
               "Return findings and lookup steps to the calling AI using the existing handoff."
             ]
+          },
+          "repository_lookup": {
+            "intents": [
+              "locate_documentation",
+              "locate_code",
+              "check_current_state"
+            ],
+            "request_contract": ".ai.system.logic/exchange/contracts/ai.repository-lookup-request.json",
+            "response_contract": ".ai.system.logic/exchange/contracts/ai.repository-lookup-response.json",
+            "sentinel_contract": ".ai.system.logic/state/contracts/ai.sentinel-transitions.json",
+            "evidence_rule": "Use the request contract to establish the target and source identity. Use the response contract to determine the evidence form and disclosure boundary."
           }
         },
         "handoff": {

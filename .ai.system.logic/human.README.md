@@ -24,3 +24,9 @@ The [encoding notes](human.ENCODING_NOTES.md) document the site-local context-in
 See the [paired repository lookup examples](exchange/examples/) for a cited answer, a clarification request, and a disclosure block.
 
 See the [JSON reference and composition contract](construction/contracts/ai.json-reference-composition.json) and the [repository lookup composition example](construction/examples/ai.repository-lookup-composition.json).
+
+## Where the detailed rules live
+
+The [root chooser](../README.md) routes heuristic engines, AIs, and people to the same reference contracts. Both machine landing pads point to ingress, launch, and egress. The pads establish context, ingress admits a request, launch selects the applicable operation contract, and egress governs the response and disclosure.
+
+The [memory-state orchestration index](ai.MEMORY_STATE_ORCHESTRATION.json) points to separate records for the state contract, sentinel transitions, receiving-system bindings, and the History refresh example. Follow the index for the current record locations.

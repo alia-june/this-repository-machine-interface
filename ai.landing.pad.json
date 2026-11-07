@@ -622,7 +622,12 @@
           }
         },
         "orientation_directory": ".ai.system.logic",
-        "launch_pad": "ai.launch.pad.json"
+        "launch_pad": "ai.launch.pad.json",
+        "routes": {
+          "request_admission": "ai.ingress.json",
+          "operation_and_handoff": "ai.launch.pad.json",
+          "response_and_disclosure": "ai.egress.json"
+        }
       }
     },
     "block-3": {

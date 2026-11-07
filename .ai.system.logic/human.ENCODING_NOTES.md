@@ -17,3 +17,7 @@ The migration preserves the prior pad and memory-state objects as complete paylo
 These examples are reference material for a future converter. The encoding step records the source and decisions needed to reproduce this site layout.
 
 Pre-encoding repository revision: 1c84de72011978e3a5b87166f35e948ba892e97a
+
+## Reference-first records
+
+The full heuristic landing pad retains its expanded Lattice form. The low-memory pad loads a compact routing record. Supporting contracts retain the five-block Lattice form and use repository-root paths where they declare that reference base. Keep a rule in its governing record and link to it from consumers. Paths in pinned references belong to the pinned revision.

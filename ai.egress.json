@@ -551,9 +551,9 @@
           "next permitted operation"
         ],
         "disclosure": [
-          "Check what the recipient may receive.",
-          "Carry the provenance and disclosure boundary with each result.",
-          "Return control to the calling AI with the handoff."
+          "Apply the recipient boundary before returning content or evidence.",
+          "For repository lookup, follow the referenced response contract for correlation, evidence, and outcome forms.",
+          "Return control to the calling AI with the permitted next step."
         ],
         "exchange_version": "1.0",
         "ingress_contract": "ai.ingress.json",

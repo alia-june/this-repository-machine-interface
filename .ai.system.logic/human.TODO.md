@@ -33,3 +33,10 @@ The four root entry files remain the way into the site. Add a folder when there 
 - [ ] **Verify** each populated record against its contract. Check reference resolution, Crete key collisions, and the intended handling of missing or denied input before treating a new example as verified.
 
 See the [encoding notes](human.ENCODING_NOTES.md) for the Crete mapping and the [Systems Deployment guide](human.SYSTEMS_DEPLOYMENT.md) for the worked instrumentation and state examples.
+
+## Construction operations still to specify
+
+- [ ] **Create.** Define the approved destination, unused-path check, staged JSON validation, and evidence required before publication. Preserve the previous committed state on failure.
+- [ ] **Safe copy.** Define the pinned source bundle, separate destination, source protection, and manifest verification. Record failure without treating the destination as a verified copy.
+- [ ] **Backup.** Define versioned retention, independent verification, and the recovery reference. Record restore verification separately.
+- [ ] **Glue.** Define the references, conditions, and receipts that may cross each operation boundary. Stop the dependent operation when a required reference fails and retain the declared survivor.
