@@ -22,3 +22,5 @@ Read each machine record from **construct.block-2.arbitrary-data**. The four roo
 The [encoding notes](ENCODING_NOTES.md) document the site-local context-index and context-records pair and the preserved [Lattice template](Lattice_Universal_Construct_Empty_Blocks.json).
 
 See the [paired repository lookup examples](exchange/examples/) for a cited answer, a clarification request, and a disclosure block.
+
+See the [JSON reference and composition contract](construction/contracts/json-reference-composition.json) and the [repository lookup composition example](construction/examples/repository-lookup-composition.json).
