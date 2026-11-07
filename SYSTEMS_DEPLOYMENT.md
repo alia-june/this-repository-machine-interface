@@ -24,6 +24,16 @@ The v0.3.0 artifact is an uninstantiated memory-state template. It gives a recei
 
 The template marks the intent fields and resource bindings with **SENTINEL_UNRESOLVED** and marks the state and orchestration vectors with **SENTINEL_UNKNOWN**. Retain those distinctions when handing context to another workplace. Resolve values from evidence and explicit local decisions.
 
+## Bound orchestration of memory state
+
+The [bound orchestration profile](MEMORY_STATE_ORCHESTRATION.json) adds a secondary seed reference to the orchestration record. It points to the illustrative Mill evidence workplace composition below. The receiving system supplies tooling for each of the eight state vectors and verifies its own bindings and authority. A vector declares what it needs to read. The system declares which instrumented tools can meet that need.
+
+**Sentinels determine capabilities.** Read the current sentinel and its declared next operation first. Then select a capability that the vector requires and the receiving system can supply with the necessary binding and authority. An available tool is never a reason to clear a sentinel. Raw tool outcomes are evidence that the state contract may classify.
+
+For History, an unknown value permits an evidence read through the declared receipt retrieval capability. The adapter maps one reviewed request ID to a local receipt, and glue carries that receipt and its source reference to History review. An unbound capability routes to a binding request. Denied access routes to operator review. A tool error or exception routes to recovery review. Keep each condition beside the state value, with the attempted operation and evidence when available.
+
+For this profile, the last committed memory-state JSON is the required survivor. Keep a failed refresh and its condition record separate. The surrounding system handles the failure and decides whether to authorize recovery. A validated and accepted result can replace the committed state. This is a paper example of the boundaries and decision order.
+
 ## Worked example with Mill Factory
 
 **Task.** Create one disposable evidence batch so an operator can inspect the intake structure. Begin with the pinned [native creator][tool], [fitted creation controller][controller], [operating guide][usage], and [publication validation][validation]. Python and PowerShell are prerequisites in the receiving workplace. Bind the Mill checkout, PowerShell launcher, disposable output root, and a task-owned controller state directory outside the source tree. Review the destination and secure the assertion and state inputs under the receiving workplace's rules.

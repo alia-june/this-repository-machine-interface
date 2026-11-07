@@ -76,6 +76,11 @@
       "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
       "path": "docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json",
       "review_url": "https://github.com/alia-june/xOSG-prototype/pull/16"
+    },
+    "memory_state_orchestration": {
+      "path": "MEMORY_STATE_ORCHESTRATION.json",
+      "mode": "reference_only",
+      "direction": "sentinel_contract_determines_capabilities"
     }
   }
 }

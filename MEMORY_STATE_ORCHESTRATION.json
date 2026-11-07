@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "kind": "bound_orchestration_reference",
+  "mode": "reference_only",
+  "memory_state_source": {
+    "schema": "mars-tool-less-core-seed/0.3.0",
+    "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
+    "url": "https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json"
+  },
+  "orchestration": {
+    "direction": "sentinel_contract_determines_capabilities",
+    "secondary_seed": {
+      "id": "mill_evidence_workplace",
+      "status": "illustrative",
+      "path": "SYSTEMS_DEPLOYMENT.md",
+      "section": "eject-a-seed-after-review",
+      "system_id": "mill_evidence_workplace",
+      "local_bindings": [
+        "receipt store",
+        "evidence root",
+        "instrumented read adapter",
+        "operator authority"
+      ]
+    },
+    "selection_order": [
+      "Read the current condition and its rule.",
+      "Intersect the rule operation with the vector capability declaration.",
+      "Resolve the declared capability in the receiving system and check local binding and authority.",
+      "If no authorized binding exists, retain the state and report the condition to the surrounding system."
+    ],
+    "transition_rule": "Only the declared state contract maps accepted evidence or a classified boundary outcome to a sentinel. Capability inventory and raw tool output cannot select or clear sentinels."
+  },
+  "preservation": {
+    "required_survivor": "last_committed_memory_state_json",
+    "attempt_record": "separate",
+    "handling_owner": "surrounding_system",
+    "promotion": "Replace committed state only after the declared evidence and acceptance conditions are met.",
+    "retry": "Requires an explicit recovery decision under the receiving system rules."
+  },
+  "sentinels": {
+    "SENTINEL_UNRESOLVED": {
+      "meaning": "A required choice or binding is unresolved.",
+      "permitted_next_operation": "request_decision",
+      "clear_when": "The responsible operator establishes the decision or binding."
+    },
+    "SENTINEL_UNKNOWN": {
+      "meaning": "Available evidence cannot establish the state value.",
+      "permitted_next_operation": "read_evidence",
+      "clear_when": "Accepted evidence establishes the value."
+    },
+    "SENTINEL_TOOL_UNBOUND": {
+      "meaning": "The required capability has no verified local binding.",
+      "permitted_next_operation": "request_binding",
+      "clear_when": "The receiving system verifies a local binding and authority."
+    },
+    "SENTINEL_ACCESS_DENIED": {
+      "meaning": "The bound operation lacks access or authority.",
+      "permitted_next_operation": "request_access_review",
+      "clear_when": "Authorized review confirms access and permission for this operation."
+    },
+    "SENTINEL_TOOL_ERROR": {
+      "meaning": "A returned error or result failed the operation contract.",
+      "permitted_next_operation": "request_recovery_review",
+      "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
+    },
+    "SENTINEL_TOOL_EXCEPTION": {
+      "meaning": "An exception interrupted the operation.",
+      "permitted_next_operation": "request_recovery_review",
+      "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
+    }
+  },
+  "condition_fields": [
+    "sentinel",
+    "vector_id",
+    "capability_id",
+    "attempted_operation",
+    "evidence_reference"
+  ],
+  "vectors": [
+    {
+      "id": "S1",
+      "name": "History",
+      "required_capabilities": [
+        {
+          "id": "read_receipts",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Trajectory",
+      "required_capabilities": [
+        {
+          "id": "read_progress_records",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "Present",
+      "required_capabilities": [
+        {
+          "id": "read_current_records",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "Origin",
+      "required_capabilities": [
+        {
+          "id": "read_source_baseline",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "name": "Destination",
+      "required_capabilities": [
+        {
+          "id": "read_accepted_goals",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "name": "Accomplishments",
+      "required_capabilities": [
+        {
+          "id": "read_verified_results",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "name": "Intentions",
+      "required_capabilities": [
+        {
+          "id": "read_intent_records",
+          "operation": "read_evidence"
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "name": "Obligations",
+      "required_capabilities": [
+        {
+          "id": "read_authority_records",
+          "operation": "read_evidence"
+        }
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "id": "mill_evidence_workplace",
+      "status": "illustrative",
+      "capabilities": [
+        {
+          "id": "read_receipts",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND",
+          "receipt_source": "https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/mill-controllers/creation/controller.py",
+          "tool": "Locally selected read-only receipt reader",
+          "microcontroller": "Proposed bounded retrieval of one receipt by request ID",
+          "adapter": "Proposed mapping from a reviewed request ID to the local receipt record",
+          "glue": "Pass receipt and provenance reference to History refresh review",
+          "evidence": "Receipt JSON and source reference"
+        },
+        {
+          "id": "read_progress_records",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_current_records",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_source_baseline",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_accepted_goals",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_verified_results",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_intent_records",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        },
+        {
+          "id": "read_authority_records",
+          "operation": "read_evidence",
+          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        }
+      ],
+      "operator_operations": [
+        "request_decision",
+        "request_binding",
+        "request_access_review",
+        "request_recovery_review"
+      ]
+    }
+  ],
+  "history_example": {
+    "vector_id": "S1",
+    "initial_condition": "SENTINEL_UNKNOWN",
+    "required_capability": "read_receipts",
+    "operation": "read_evidence",
+    "cases": [
+      {
+        "outcome": "No verified local binding",
+        "next_condition": "SENTINEL_TOOL_UNBOUND",
+        "next_operation": "request_binding"
+      },
+      {
+        "outcome": "Operation denied",
+        "next_condition": "SENTINEL_ACCESS_DENIED",
+        "next_operation": "request_access_review"
+      },
+      {
+        "outcome": "Operation raises an exception",
+        "next_condition": "SENTINEL_TOOL_EXCEPTION",
+        "next_operation": "request_recovery_review"
+      }
+    ]
+  }
+}
