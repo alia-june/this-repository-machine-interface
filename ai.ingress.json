@@ -231,6 +231,12 @@
               "item": "structure.use.constraints"
             }
           }
+        },
+        "terminology": {
+          "$context-ref": {
+            "context": "ctx:page",
+            "item": "terminology.references"
+          }
         }
       }
     },
@@ -1378,6 +1384,16 @@
                 "$sentinel": "UNCONFIGURED"
               },
               "status": "DECLARED"
+            },
+            "terminology.references": {
+              "target": {
+                "context": "ctx:page",
+                "item": "terminology.references"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "DECLARED"
             }
           }
         }
@@ -1617,6 +1633,24 @@
           "structure.use.constraints": [
             "Reference only. Authority remains with the applicable user and system.",
             "Verify the declared context, source identity, and applicable authority before dependent work."
+          ],
+          "terminology.references": [
+            {
+              "path": ".ai.system.logic/terminology/lexicons/ai.site-lexicon.json",
+              "selector": "/construct/block-2/arbitrary-data/terms/ingress"
+            },
+            {
+              "path": ".ai.system.logic/terminology/lexicons/ai.site-lexicon.json",
+              "selector": "/construct/block-2/arbitrary-data/terms/context_reference"
+            },
+            {
+              "path": ".ai.system.logic/terminology/lexicons/ai.site-lexicon.json",
+              "selector": "/construct/block-2/arbitrary-data/terms/sentinel"
+            },
+            {
+              "path": ".ai.system.logic/terminology/lexicons/ai.site-lexicon.json",
+              "selector": "/construct/block-2/arbitrary-data/terms/launch_pad"
+            }
           ]
         }
       }

@@ -30,3 +30,5 @@ See the [JSON reference and composition contract](construction/contracts/ai.json
 The [root chooser](../README.md) routes heuristic engines, AIs, and people to the same reference contracts. Both machine landing pads point to ingress, launch, and egress. The pads establish context, ingress admits a request, launch selects the applicable operation contract, and egress governs the response and disclosure.
 
 The [memory-state orchestration index](ai.MEMORY_STATE_ORCHESTRATION.json) points to separate records for the state contract, sentinel transitions, receiving-system bindings, and the History refresh example. Follow the index for the current record locations.
+
+See the [site lexicon](terminology/lexicons/ai.site-lexicon.json) for shared terms. Find a term by its ID under construct.block-2.arbitrary-data.terms. Follow its source references for the governing material.
