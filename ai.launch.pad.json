@@ -576,7 +576,7 @@
           "requested_change": "Describe the requested action, relevant sources, and applicable approval. Carry the request into the handoff.",
           "systems_deployment": {
             "intent": "plan_systems_deployment",
-            "guide": ".ai.system.logic/SYSTEMS_DEPLOYMENT.md",
+            "guide": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
             "steps": [
               "Surface the instrument-before-use warning.",
               "Identify the intended workplace task and one declared tool.",

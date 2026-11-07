@@ -6,9 +6,9 @@ Reviewed baseline is [27d9dee](https://github.com/alia-june/this-repository-mach
 
 - [ ] **Landing pad.** Complete the [landing pad](../ai.landing.pad.json) discovery and orientation references. Identify the minimum context needed at first contact and the references a caller can resolve later. Keep repository discovery and orientation distinct from operation decisions.
 - [ ] **Launch pad.** Connect each intent in the [launch pad](../ai.launch.pad.json) to its evidence needs, applicable sentinel contract, and handoff. Reference the detailed contracts from the operation entries.
-- [ ] **Ingress.** In the [ingress contract](../ingress.json), define required and conditional request fields for each operation, including target, pinned source identity, context, and authority evidence. Specify how missing context, invalid input, and denied access affect the dependent operation.
-- [ ] **Egress.** In the [egress contract](../egress.json), define the forms for a cited answer, a lookup plan, a clarification request, and a blocked response. Specify how each carries the request ID, provenance, disclosure decision, unresolved conditions, and the next permitted step.
-- [ ] **Memory-state orchestration.** In the [bound example](MEMORY_STATE_ORCHESTRATION.json), distinguish the state and sentinel contracts, receiving-system capability bindings, and illustrative History cases. Keep the rule that the sentinel contract determines which capability is eligible.
+- [ ] **Ingress.** In the [ingress contract](../ai.ingress.json), define required and conditional request fields for each operation, including target, pinned source identity, context, and authority evidence. Specify how missing context, invalid input, and denied access affect the dependent operation.
+- [ ] **Egress.** In the [egress contract](../ai.egress.json), define the forms for a cited answer, a lookup plan, a clarification request, and a blocked response. Specify how each carries the request ID, provenance, disclosure decision, unresolved conditions, and the next permitted step.
+- [ ] **Memory-state orchestration.** In the [bound example](ai.MEMORY_STATE_ORCHESTRATION.json), distinguish the state and sentinel contracts, receiving-system capability bindings, and illustrative History cases. Keep the rule that the sentinel contract determines which capability is eligible.
 
 ## Place subsequent JSON by function and form
 
@@ -32,4 +32,4 @@ The four root entry files remain the way into the site. Add a folder when there 
 - [ ] **Keep the sentinel** when the value, evidence, or binding is unresolved. Record what would clear the condition and which dependent operation must stop while it is present.
 - [ ] **Verify** each populated record against its contract. Check reference resolution, Crete key collisions, and the intended handling of missing or denied input before treating a new example as verified.
 
-See the [encoding notes](ENCODING_NOTES.md) for the Crete mapping and the [Systems Deployment guide](SYSTEMS_DEPLOYMENT.md) for the worked instrumentation and state examples.
+See the [encoding notes](human.ENCODING_NOTES.md) for the Crete mapping and the [Systems Deployment guide](human.SYSTEMS_DEPLOYMENT.md) for the worked instrumentation and state examples.

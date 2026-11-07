@@ -538,45 +538,59 @@
     },
     "block-2": {
       "arbitrary-data": {
-        "kind": "repository_lookup_request_contract",
-        "exchange_version": "1.0",
+        "kind": "ingress_contract",
         "mode": "reference_only",
-        "reference_base": "repository_root",
-        "ingress": "ingress.json",
-        "response_contract": ".ai.system.logic/exchange/contracts/repository-lookup-response.json",
-        "sentinel_profile": ".ai.system.logic/MEMORY_STATE_ORCHESTRATION.json",
-        "operations": [
-          "locate_documentation",
-          "locate_code",
-          "check_current_state"
+        "landing_pad": "ai.landing.pad.json",
+        "launch_pad": "ai.launch.pad.json",
+        "required_context": [
+          "request",
+          "source identity",
+          "applicable repository and revision",
+          "authority for the requested operation"
         ],
-        "request_fields": {
-          "request_id": "Nonempty caller-provided correlation identifier.",
-          "operation": "One supported read-only lookup intent.",
-          "query": "Nonempty description of the information sought.",
-          "target": "Owner and repository name, with revision or live-record locator when applicable. A missing or ambiguous repository is a context condition.",
-          "source_references": "Optional evidence pointers with identity and revision where applicable.",
-          "authority_evidence": "Required when the applicable access or operating policy requires evidence of authority."
+        "acceptance": [
+          "Resolve the applicable context.",
+          "Check source identity and the declared contract.",
+          "Verify access and authority for the dependent operation.",
+          "Retain unresolved or denied conditions and return them to the calling AI."
+        ],
+        "exchange_version": "1.0",
+        "egress_contract": "ai.egress.json",
+        "memory_state_orchestration": ".ai.system.logic/ai.MEMORY_STATE_ORCHESTRATION.json",
+        "request_envelope": {
+          "required": [
+            "request_id",
+            "operation"
+          ],
+          "fields": {
+            "request_id": "Nonempty identifier echoed in egress.",
+            "operation": "Requested intent from the landing pad index. Preserve the order of distinct operations.",
+            "target": "Repository and pinned revision when needed to establish the requested source. Resolve an applicable branch to a commit before relying on it.",
+            "source_references": "Source identity, revision and path or record selector when relying on supplied material.",
+            "context_references": "Applicable context, memory state and conditions when the request depends on them.",
+            "authority_evidence": "Reference to verified authority when required by the requested operation."
+          }
         },
-        "required_fields": [
-          "request_id",
-          "operation",
-          "query"
-        ],
-        "acceptance_rules": [
-          "Validate the required fields before attempting the lookup.",
-          "Resolve the repository uniquely from the request or established chat context.",
-          "Check applicable access and authority before reading dependent sources.",
-          "For versioned repository content, resolve the requested revision or default branch to a commit before relying on the content. For live records, retain a stable locator and observation time.",
-          "If a declared reference fails to resolve, stop the dependent lookup, preserve the request context, and require a new verified resolution before proceeding."
-        ],
         "outcomes": {
-          "accepted": "The target, applicable source identity, and authority have been established.",
-          "invalid_input": "A required field is absent or malformed, or the operation is outside this contract.",
-          "missing_context": "The request is well formed but the repository or required context cannot be selected uniquely.",
-          "denied_access": "Access or authority required for the lookup was denied.",
-          "unresolved_reference": "A declared reference cannot be resolved as supplied. Do not substitute another target."
-        }
+          "accepted": {
+            "condition": "Required fields, applicable context, source identity and authority are established.",
+            "next": "orientation_or_evidence_lookup"
+          },
+          "missing_context": {
+            "condition": "An otherwise valid request lacks facts needed to select the target or operation.",
+            "next": "request_clarification"
+          },
+          "invalid_input": {
+            "condition": "A required envelope field is absent or malformed.",
+            "next": "return_validation_issues"
+          },
+          "denied_access": {
+            "condition": "Required access or authority is denied.",
+            "next": "stop_dependent_operation",
+            "sentinel": "SENTINEL_ACCESS_DENIED"
+          }
+        },
+        "repository_lookup_request_contract": ".ai.system.logic/exchange/contracts/ai.repository-lookup-request.json"
       }
     },
     "block-3": {
@@ -1598,9 +1612,9 @@
           }
         },
         "ctx:page": {
-          "identification.designation": "Repository Lookup Request Contract",
-          "identification.contextual-role": "read_only_lookup_request_form",
-          "structure.use.purpose": "Describe the information needed to admit a read-only repository lookup.",
+          "identification.designation": "Ingress Contract",
+          "identification.contextual-role": "request_admission",
+          "structure.use.purpose": "Describe how to validate and admit a request into the reference interface.",
           "structure.use.constraints": [
             "Reference only. Authority remains with the applicable user and system.",
             "Verify the declared context, source identity, and applicable authority before dependent work."

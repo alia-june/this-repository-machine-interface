@@ -538,35 +538,44 @@
     },
     "block-2": {
       "arbitrary-data": {
-        "schema_version": "1.0",
-        "kind": "json_reference_composition_example",
+        "kind": "repository_lookup_request_contract",
+        "exchange_version": "1.0",
         "mode": "reference_only",
-        "status": "illustrative",
         "reference_base": "repository_root",
-        "contract": ".ai.system.logic/construction/contracts/json-reference-composition.json",
-        "inputs": [
-          {
-            "slot": "request_contract",
-            "reference": {
-              "repository": "alia-june/this-repository-machine-interface",
-              "revision": "b5a4e8cf7a2524a73a96855952ffef653c55f0d0",
-              "path": ".ai.system.logic/exchange/contracts/repository-lookup-request.json",
-              "selector": "/construct/block-2/arbitrary-data"
-            }
-          },
-          {
-            "slot": "response_contract",
-            "reference": {
-              "repository": "alia-june/this-repository-machine-interface",
-              "revision": "b5a4e8cf7a2524a73a96855952ffef653c55f0d0",
-              "path": ".ai.system.logic/exchange/contracts/repository-lookup-response.json",
-              "selector": "/construct/block-2/arbitrary-data"
-            }
-          }
+        "ingress": "ai.ingress.json",
+        "response_contract": ".ai.system.logic/exchange/contracts/ai.repository-lookup-response.json",
+        "sentinel_profile": ".ai.system.logic/ai.MEMORY_STATE_ORCHESTRATION.json",
+        "operations": [
+          "locate_documentation",
+          "locate_code",
+          "check_current_state"
         ],
-        "expected_slots": {
-          "request_contract": "repository_lookup_request_contract",
-          "response_contract": "repository_lookup_response_contract"
+        "request_fields": {
+          "request_id": "Nonempty caller-provided correlation identifier.",
+          "operation": "One supported read-only lookup intent.",
+          "query": "Nonempty description of the information sought.",
+          "target": "Owner and repository name, with revision or live-record locator when applicable. A missing or ambiguous repository is a context condition.",
+          "source_references": "Optional evidence pointers with identity and revision where applicable.",
+          "authority_evidence": "Required when the applicable access or operating policy requires evidence of authority."
+        },
+        "required_fields": [
+          "request_id",
+          "operation",
+          "query"
+        ],
+        "acceptance_rules": [
+          "Validate the required fields before attempting the lookup.",
+          "Resolve the repository uniquely from the request or established chat context.",
+          "Check applicable access and authority before reading dependent sources.",
+          "For versioned repository content, resolve the requested revision or default branch to a commit before relying on the content. For live records, retain a stable locator and observation time.",
+          "If a declared reference fails to resolve, stop the dependent lookup, preserve the request context, and require a new verified resolution before proceeding."
+        ],
+        "outcomes": {
+          "accepted": "The target, applicable source identity, and authority have been established.",
+          "invalid_input": "A required field is absent or malformed, or the operation is outside this contract.",
+          "missing_context": "The request is well formed but the repository or required context cannot be selected uniquely.",
+          "denied_access": "Access or authority required for the lookup was denied.",
+          "unresolved_reference": "A declared reference cannot be resolved as supplied. Do not substitute another target."
         }
       }
     },
@@ -1589,11 +1598,12 @@
           }
         },
         "ctx:page": {
-          "identification.designation": "Repository Lookup Composition",
-          "identification.contextual-role": "construction_example",
-          "structure.use.purpose": "Compose the pinned lookup request and response contracts by reference.",
+          "identification.designation": "Repository Lookup Request Contract",
+          "identification.contextual-role": "read_only_lookup_request_form",
+          "structure.use.purpose": "Describe the information needed to admit a read-only repository lookup.",
           "structure.use.constraints": [
-            "Reference only. Resolve declared identities before composing. Preserve source records."
+            "Reference only. Authority remains with the applicable user and system.",
+            "Verify the declared context, source identity, and applicable authority before dependent work."
           ]
         }
       }

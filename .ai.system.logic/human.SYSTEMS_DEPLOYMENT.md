@@ -26,7 +26,7 @@ The template marks the intent fields and resource bindings with **SENTINEL_UNRES
 
 ## Bound orchestration of memory state
 
-The [bound orchestration profile](MEMORY_STATE_ORCHESTRATION.json) adds a secondary seed reference to the orchestration record. It points to the illustrative Mill evidence workplace composition below. The receiving system supplies tooling for each of the eight state vectors and verifies its own bindings and authority. A vector declares what it needs to read. The system declares which instrumented tools can meet that need.
+The [bound orchestration profile](ai.MEMORY_STATE_ORCHESTRATION.json) adds a secondary seed reference to the orchestration record. It points to the illustrative Mill evidence workplace composition below. The receiving system supplies tooling for each of the eight state vectors and verifies its own bindings and authority. A vector declares what it needs to read. The system declares which instrumented tools can meet that need.
 
 **Sentinels determine capabilities.** Read the current sentinel and its declared next operation first. Then select a capability that the vector requires and the receiving system can supply with the necessary binding and authority. An available tool is never a reason to clear a sentinel. Raw tool outcomes are evidence that the state contract may classify.
 

@@ -557,7 +557,7 @@
         },
         "audience": "machine",
         "mode": "reference_only",
-        "human_entrypoint": ".ai.system.logic/README.md",
+        "human_entrypoint": ".ai.system.logic/human.README.md",
         "intent_index": {
           "discover_repository": [
             "owner-scoped repository metadata"
@@ -589,7 +589,7 @@
           ]
         },
         "systems_deployment": {
-          "guide": ".ai.system.logic/SYSTEMS_DEPLOYMENT.md",
+          "guide": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
           "warning": {
             "severity": "warning",
             "policy": "instrument_before_use",
@@ -616,7 +616,7 @@
             "review_url": "https://github.com/alia-june/xOSG-prototype/pull/16"
           },
           "memory_state_orchestration": {
-            "path": ".ai.system.logic/MEMORY_STATE_ORCHESTRATION.json",
+            "path": ".ai.system.logic/ai.MEMORY_STATE_ORCHESTRATION.json",
             "mode": "reference_only",
             "direction": "sentinel_contract_determines_capabilities"
           }

@@ -538,41 +538,92 @@
     },
     "block-2": {
       "arbitrary-data": {
-        "kind": "repository_lookup_exchange_example",
-        "exchange_version": "1.0",
+        "kind": "egress_contract",
         "mode": "reference_only",
-        "reference_base": "repository_root",
-        "request_contract": ".ai.system.logic/exchange/contracts/repository-lookup-request.json",
-        "response_contract": ".ai.system.logic/exchange/contracts/repository-lookup-response.json",
-        "request": {
-          "request_id": "repository-lookup-disclosure-blocked",
-          "operation": "locate_documentation",
-          "query": "Can you share the supporting material for the requested repository finding?",
-          "target": {
-            "repository": "alia-june/this-repository-machine-interface",
-            "revision": "b5a4e8cf7a2524a73a96855952ffef653c55f0d0"
+        "landing_pad": "ai.landing.pad.json",
+        "launch_pad": "ai.launch.pad.json",
+        "handoff": [
+          "request",
+          "answers",
+          "source identities and revisions",
+          "evidence references",
+          "unresolved conditions",
+          "next permitted operation"
+        ],
+        "disclosure": [
+          "Check what the recipient may receive.",
+          "Carry the provenance and disclosure boundary with each result.",
+          "Return control to the calling AI with the handoff."
+        ],
+        "exchange_version": "1.0",
+        "ingress_contract": "ai.ingress.json",
+        "memory_state_orchestration": ".ai.system.logic/ai.MEMORY_STATE_ORCHESTRATION.json",
+        "response_envelope": {
+          "required": [
+            "request_id",
+            "outcome",
+            "disclosure_decision",
+            "handoff"
+          ],
+          "fields": {
+            "request_id": "Echo the ingress identifier when it was established. Use an explicit unresolved condition when no identifier was available.",
+            "outcome": "One outcome for the response, with per-operation findings when the request contains multiple operations.",
+            "answers": "Source-backed findings, with source identity and pinned revision.",
+            "evidence_references": "Disclosable locations for supporting evidence.",
+            "lookup_steps": "How an authorized caller can obtain missing evidence.",
+            "unresolved_conditions": "Applicable sentinels, affected scope, and permitted follow-up.",
+            "disclosure_decision": "Record what was permitted or withheld. Omit withheld content and any evidence references that would reveal it.",
+            "handoff": "Return control to the calling AI with the next permitted step."
           }
         },
-        "ingress_outcome": "accepted",
-        "response": {
-          "request_id": "repository-lookup-disclosure-blocked",
-          "outcome": "blocked",
-          "unresolved_conditions": [
-            {
-              "sentinel": "SENTINEL_ACCESS_DENIED",
-              "scope": "recipient_disclosure",
-              "detail": "The recipient lacks authority to receive the supporting material in this synthetic case."
-            }
-          ],
-          "disclosure_decision": {
-            "status": "withheld",
-            "basis": "The recipient disclosure check failed."
+        "outcomes": {
+          "answered": {
+            "condition": "Accepted evidence supports a disclosable answer.",
+            "include": [
+              "answers",
+              "evidence_references"
+            ]
           },
-          "handoff": {
-            "recipient": "calling_ai",
-            "next": "stop_dependent_lookup_or_disclosure"
+          "lookup_required": {
+            "condition": "The request is understood and needed evidence is unavailable.",
+            "include": [
+              "lookup_steps",
+              "unresolved_conditions"
+            ]
+          },
+          "clarification_required": {
+            "condition": "The target or requested operation needs clarification.",
+            "include": [
+              "unresolved_conditions",
+              "handoff"
+            ]
+          },
+          "blocked": {
+            "condition": "Validation, authority, access, or disclosure prevents a substantive response.",
+            "include": [
+              "disclosure_decision",
+              "unresolved_conditions",
+              "handoff"
+            ]
           }
-        }
+        },
+        "ingress_outcome_mapping": {
+          "accepted": [
+            "answered",
+            "lookup_required",
+            "blocked"
+          ],
+          "missing_context": [
+            "clarification_required"
+          ],
+          "invalid_input": [
+            "blocked"
+          ],
+          "denied_access": [
+            "blocked"
+          ]
+        },
+        "repository_lookup_response_contract": ".ai.system.logic/exchange/contracts/ai.repository-lookup-response.json"
       }
     },
     "block-3": {
@@ -1594,11 +1645,12 @@
           }
         },
         "ctx:page": {
-          "identification.designation": "Repository Lookup Blocked at Disclosure",
-          "identification.contextual-role": "paired_exchange_example",
-          "structure.use.purpose": "Demonstrate a synthetic recipient boundary using shareable facts only.",
+          "identification.designation": "Egress Contract",
+          "identification.contextual-role": "response_disclosure",
+          "structure.use.purpose": "Describe how to assemble and disclose a response to an ingress request.",
           "structure.use.constraints": [
-            "Illustrative reference data. Apply the referenced contracts to actual requests."
+            "Reference only. Authority remains with the applicable user and system.",
+            "Disclose only evidence and content approved for the recipient."
           ]
         }
       }
