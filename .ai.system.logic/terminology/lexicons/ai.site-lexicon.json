@@ -715,6 +715,22 @@
                 "path": ".ai.system.logic/state/contracts/ai.sentinel-transitions.json"
               }
             ]
+          },
+          "safe_copy": {
+            "label": "Safe copy",
+            "definition": "Copy a complete pinned source bundle to a distinct new destination and verify the destination membership and digests against its manifest.",
+            "source_references": [
+              {
+                "kind": "user_supplied_recovered_source_note",
+                "label": "October — Safe Copy / Safe Transfer distinction",
+                "status": "working_basis",
+                "summary": "Safe copy copies a pinned complete bundle to a new destination and verifies its manifest. Safe transfer concerns versioned local publication against an expected predecessor."
+              }
+            ],
+            "governing_contract": {
+              "path": ".ai.system.logic/construction/contracts/ai.safe-copy.json",
+              "selector": "/construct/block-2/arbitrary-data"
+            }
           }
         }
       }

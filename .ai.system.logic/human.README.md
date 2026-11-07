@@ -32,3 +32,5 @@ The [root chooser](../README.md) routes heuristic engines, AIs, and people to th
 The [memory-state orchestration index](ai.MEMORY_STATE_ORCHESTRATION.json) points to separate records for the state contract, sentinel transitions, receiving-system bindings, and the History refresh example. Follow the index for the current record locations.
 
 See the [site lexicon](terminology/lexicons/ai.site-lexicon.json) for shared terms. Find a term by its ID under construct.block-2.arbitrary-data.terms. Follow its source references for the governing material.
+
+See the [safe-copy contract](construction/contracts/ai.safe-copy.json) and [receipt form](construction/receipts/ai.safe-copy-receipt.json) for the source, destination, and verification boundaries of a bundle copy.
