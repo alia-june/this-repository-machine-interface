@@ -20,3 +20,5 @@ Read each machine record from **construct.block-2.arbitrary-data**. The four roo
 - [Egress](../egress.json) describes what may leave and the evidence and disclosure conditions that accompany it.
 
 The [encoding notes](ENCODING_NOTES.md) document the site-local context-index and context-records pair and the preserved [Lattice template](Lattice_Universal_Construct_Empty_Blocks.json).
+
+See the [paired repository lookup examples](exchange/examples/) for a cited answer, a clarification request, and a disclosure block.
