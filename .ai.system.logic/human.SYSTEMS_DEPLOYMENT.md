@@ -58,6 +58,14 @@ For a paper walkthrough, take slug **orientation-demo**, date **2026-11-07**, an
 
 Read admission, process outcome, reported creation, structural verification, retained state, and next permitted action separately. Published validation records 13 passing creation-controller cases for the declared suite. This walkthrough traces the cases against source and makes no runtime or total credit-savings claim.
 
+## This repository as a Universal JSON example
+
+The site demonstrates how we use Universal JSON. **The AI JSON is the germ of the heuristic JSON seed.** The [full heuristic landing pad](../ai.landing.pad.json) is the expanded seed. The [low-memory AI landing pad](../ai.landing.pad.low-mem.json) is its compact germ. The germ identifies the seed at a pinned revision and carries current routes for the next step.
+
+Follow [ingress](../ai.ingress.json) to establish what may enter, the [launch pad](../ai.launch.pad.json) to identify the operation and handoff, and [egress](../ai.egress.json) to decide what result and evidence may leave. These records demonstrate the exchange in the same Lattice form.
+
+The [memory-state orchestration records](ai.MEMORY_STATE_ORCHESTRATION.json) show how the site carries state, declares tooling requirements, and uses sentinels to determine eligible capabilities. The [reference and composition contract](construction/contracts/ai.json-reference-composition.json) and [safe-copy contract](construction/contracts/ai.safe-copy.json) show how the form describes construction and verification. The [Mill History germ](state/examples/ai.mill-history-germ.json) applies the same seed-to-germ process to one state refresh.
+
 ## Advanced technique for low-memory and bare-metal work
 
 **Take the seed → eject a germ immediately → grow from the germ.**

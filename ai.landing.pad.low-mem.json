@@ -29,6 +29,13 @@
           "request_admission": "ai.ingress.json",
           "operation_and_handoff": "ai.launch.pad.json",
           "response_and_disclosure": "ai.egress.json"
+        },
+        "growth_role": "germ",
+        "source_seed": {
+          "role": "heuristic_json_seed",
+          "repository": "alia-june/this-repository-machine-interface",
+          "revision": "446afb2546bd8f9bace360a4b66f65554a088b6c",
+          "path": "ai.landing.pad.json"
         }
       }
     },
