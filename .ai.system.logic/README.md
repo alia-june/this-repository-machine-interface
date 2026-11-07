@@ -10,3 +10,13 @@ Both files are reference data. The calling AI uses the handoff to continue under
 ## Systems Deployment
 
 [Grow a workplace, instrument a tool, and eject a seed](SYSTEMS_DEPLOYMENT.md). Start with the instrumentation warning and follow the worked Mill Factory example.
+## Lattice entry points
+
+Read each machine record from **construct.block-2.arbitrary-data**. The four root files have distinct roles.
+
+- [Landing pad](../ai.landing.pad.json) establishes repository context.
+- [Launch pad](../ai.launch.pad.json) describes the requested operation and handoff.
+- [Ingress](../ingress.json) describes what may enter and the conditions for accepting it.
+- [Egress](../egress.json) describes what may leave and the evidence and disclosure conditions that accompany it.
+
+The [encoding notes](ENCODING_NOTES.md) document the site-local context-index and context-records pair and the preserved [Lattice template](Lattice_Universal_Construct_Empty_Blocks.json).

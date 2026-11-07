@@ -1,244 +1,1764 @@
 {
-  "schema_version": "1.0",
-  "kind": "bound_orchestration_reference",
-  "mode": "reference_only",
-  "memory_state_source": {
-    "schema": "mars-tool-less-core-seed/0.3.0",
-    "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
-    "url": "https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json"
-  },
-  "orchestration": {
-    "direction": "sentinel_contract_determines_capabilities",
-    "secondary_seed": {
-      "id": "mill_evidence_workplace",
-      "status": "illustrative",
-      "path": "SYSTEMS_DEPLOYMENT.md",
-      "section": "eject-a-seed-after-review",
-      "system_id": "mill_evidence_workplace",
-      "local_bindings": [
-        "receipt store",
-        "evidence root",
-        "instrumented read adapter",
-        "operator authority"
-      ]
-    },
-    "selection_order": [
-      "Read the current condition and its rule.",
-      "Intersect the rule operation with the vector capability declaration.",
-      "Resolve the declared capability in the receiving system and check local binding and authority.",
-      "If no authorized binding exists, retain the state and report the condition to the surrounding system."
-    ],
-    "transition_rule": "Only the declared state contract maps accepted evidence or a classified boundary outcome to a sentinel. Capability inventory and raw tool output cannot select or clear sentinels."
-  },
-  "preservation": {
-    "required_survivor": "last_committed_memory_state_json",
-    "attempt_record": "separate",
-    "handling_owner": "surrounding_system",
-    "promotion": "Replace committed state only after the declared evidence and acceptance conditions are met.",
-    "retry": "Requires an explicit recovery decision under the receiving system rules."
-  },
-  "sentinels": {
-    "SENTINEL_UNRESOLVED": {
-      "meaning": "A required choice or binding is unresolved.",
-      "permitted_next_operation": "request_decision",
-      "clear_when": "The responsible operator establishes the decision or binding."
-    },
-    "SENTINEL_UNKNOWN": {
-      "meaning": "Available evidence cannot establish the state value.",
-      "permitted_next_operation": "read_evidence",
-      "clear_when": "Accepted evidence establishes the value."
-    },
-    "SENTINEL_TOOL_UNBOUND": {
-      "meaning": "The required capability has no verified local binding.",
-      "permitted_next_operation": "request_binding",
-      "clear_when": "The receiving system verifies a local binding and authority."
-    },
-    "SENTINEL_ACCESS_DENIED": {
-      "meaning": "The bound operation lacks access or authority.",
-      "permitted_next_operation": "request_access_review",
-      "clear_when": "Authorized review confirms access and permission for this operation."
-    },
-    "SENTINEL_TOOL_ERROR": {
-      "meaning": "A returned error or result failed the operation contract.",
-      "permitted_next_operation": "request_recovery_review",
-      "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
-    },
-    "SENTINEL_TOOL_EXCEPTION": {
-      "meaning": "An exception interrupted the operation.",
-      "permitted_next_operation": "request_recovery_review",
-      "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
-    }
-  },
-  "condition_fields": [
-    "sentinel",
-    "vector_id",
-    "capability_id",
-    "attempted_operation",
-    "evidence_reference"
-  ],
-  "vectors": [
-    {
-      "id": "S1",
-      "name": "History",
-      "required_capabilities": [
-        {
-          "id": "read_receipts",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S2",
-      "name": "Trajectory",
-      "required_capabilities": [
-        {
-          "id": "read_progress_records",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S3",
-      "name": "Present",
-      "required_capabilities": [
-        {
-          "id": "read_current_records",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S4",
-      "name": "Origin",
-      "required_capabilities": [
-        {
-          "id": "read_source_baseline",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S5",
-      "name": "Destination",
-      "required_capabilities": [
-        {
-          "id": "read_accepted_goals",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S6",
-      "name": "Accomplishments",
-      "required_capabilities": [
-        {
-          "id": "read_verified_results",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S7",
-      "name": "Intentions",
-      "required_capabilities": [
-        {
-          "id": "read_intent_records",
-          "operation": "read_evidence"
-        }
-      ]
-    },
-    {
-      "id": "S8",
-      "name": "Obligations",
-      "required_capabilities": [
-        {
-          "id": "read_authority_records",
-          "operation": "read_evidence"
-        }
-      ]
-    }
-  ],
-  "systems": [
-    {
-      "id": "mill_evidence_workplace",
-      "status": "illustrative",
-      "capabilities": [
-        {
-          "id": "read_receipts",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND",
-          "receipt_source": "https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/mill-controllers/creation/controller.py",
-          "tool": "Locally selected read-only receipt reader",
-          "microcontroller": "Proposed bounded retrieval of one receipt by request ID",
-          "adapter": "Proposed mapping from a reviewed request ID to the local receipt record",
-          "glue": "Pass receipt and provenance reference to History refresh review",
-          "evidence": "Receipt JSON and source reference"
+  "construct": {
+    "block-0": {
+      "self": {
+        "ego": {
+          "self-identification": {
+            "self-description": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.self-description"
+              }
+            },
+            "self-assessed-value": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.self-assessed-value"
+              }
+            },
+            "self-assessed-worth": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.self-assessed-worth"
+              }
+            },
+            "self-assessed-necessity": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.self-assessed-necessity"
+              }
+            },
+            "self-assessed-criticality": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.self-assessed-criticality"
+              }
+            },
+            "known-limitations": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.self-identification.known-limitations"
+              }
+            }
+          },
+          "secrets": {
+            "protected-information": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.secrets.protected-information"
+              }
+            },
+            "disclosure-boundaries": {
+              "$cry-ref": {
+                "context": "core",
+                "item": "ego.secrets.disclosure-boundaries"
+              }
+            }
+          }
         },
-        {
-          "id": "read_progress_records",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        "core": {
+          "lineage": {
+            "$cry-ref": {
+              "context": "core",
+              "item": "core.lineage"
+            }
+          },
+          "constitution": {
+            "$cry-ref": {
+              "context": "core",
+              "item": "core.constitution"
+            }
+          },
+          "continuity": {
+            "$cry-ref": {
+              "context": "core",
+              "item": "core.continuity"
+            }
+          }
         },
-        {
-          "id": "read_current_records",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
-        },
-        {
-          "id": "read_source_baseline",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
-        },
-        {
-          "id": "read_accepted_goals",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
-        },
-        {
-          "id": "read_verified_results",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
-        },
-        {
-          "id": "read_intent_records",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
-        },
-        {
-          "id": "read_authority_records",
-          "operation": "read_evidence",
-          "binding_status": "SENTINEL_TOOL_UNBOUND"
+        "identification": {
+          "designation": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "identification.designation"
+            }
+          },
+          "external-identifiers": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "identification.external-identifiers"
+            }
+          },
+          "contextual-role": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "identification.contextual-role"
+            }
+          },
+          "affiliations": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "identification.affiliations"
+            }
+          }
         }
-      ],
-      "operator_operations": [
-        "request_decision",
-        "request_binding",
-        "request_access_review",
-        "request_recovery_review"
-      ]
-    }
-  ],
-  "history_example": {
-    "vector_id": "S1",
-    "initial_condition": "SENTINEL_UNKNOWN",
-    "required_capability": "read_receipts",
-    "operation": "read_evidence",
-    "cases": [
-      {
-        "outcome": "No verified local binding",
-        "next_condition": "SENTINEL_TOOL_UNBOUND",
-        "next_operation": "request_binding"
       },
-      {
-        "outcome": "Operation denied",
-        "next_condition": "SENTINEL_ACCESS_DENIED",
-        "next_operation": "request_access_review"
-      },
-      {
-        "outcome": "Operation raises an exception",
-        "next_condition": "SENTINEL_TOOL_EXCEPTION",
-        "next_operation": "request_recovery_review"
+      "structure": {
+        "components": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.components"
+          }
+        },
+        "relations": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.relations"
+          }
+        },
+        "boundaries": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.boundaries"
+          }
+        },
+        "dependencies": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.dependencies"
+          }
+        },
+        "expressed": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.expressed"
+          }
+        },
+        "displayed": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.displayed"
+          }
+        },
+        "observed": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.observed"
+          }
+        },
+        "disclosure-status": {
+          "$cry-ref": {
+            "context": "active",
+            "item": "structure.disclosure-status"
+          }
+        },
+        "use": {
+          "reported-use": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.reported-use"
+            }
+          },
+          "observed-use": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.observed-use"
+            }
+          },
+          "purpose": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.purpose"
+            }
+          },
+          "reason": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.reason"
+            }
+          },
+          "cause": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.cause"
+            }
+          },
+          "necessity": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.necessity"
+            }
+          },
+          "means": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.means"
+            }
+          },
+          "instrument": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.instrument"
+            }
+          },
+          "method": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.method"
+            }
+          },
+          "mode": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.mode"
+            }
+          },
+          "manner": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.manner"
+            }
+          },
+          "beneficiary": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.beneficiary"
+            }
+          },
+          "constraints": {
+            "$cry-ref": {
+              "context": "active",
+              "item": "structure.use.constraints"
+            }
+          }
+        }
       }
-    ]
+    },
+    "block-1": {
+      "safeguards": {
+        "safe-defaults": {
+          "activation": "DENY_UNTIL_AUTHORIZED",
+          "read": "DENY_UNTIL_AUTHORIZED",
+          "write": "DENY_UNTIL_AUTHORIZED",
+          "execute": "DENY_UNTIL_AUTHORIZED",
+          "publish": "DENY_UNTIL_VERIFIED_AND_AUTHORIZED",
+          "disclose": "DENY_UNTIL_AUTHORIZED",
+          "network": "DENY_UNTIL_AUTHORIZED",
+          "reference-resolution": "DENY_UNTIL_LOCK_VERIFIED",
+          "context-switch": "DENY_UNTIL_VALIDATED_AND_AUTHORIZED",
+          "privilege-escalation": "DENY",
+          "mutation-of-source": "DENY",
+          "unrecognized-sentinel": "FAULT_CLOSED",
+          "unmatched-reference": "FAULT_CLOSED",
+          "unverified-lock": "FAULT_CLOSED",
+          "integrity-failure": "ISOLATE_AND_HALT",
+          "backup-unavailable": "HALT_NO_UNVERIFIED_RESTORE",
+          "fallback-unavailable": "HALT",
+          "recovery-unavailable": "HALT_AWAIT_AUTHORIZED_SUPERVISION",
+          "loss-of-provenance": "DENY_PUBLISH",
+          "on-fault": "PRESERVE_EVIDENCE_AND_DENY_UNSAFE_CONTINUATION",
+          "unknown-is-not-permission": true,
+          "no-implicit-authority-from-value": true,
+          "no-autonomous-elevation": true,
+          "no-autonomous-recovery-authority": true
+        },
+        "lifecycle": {
+          "state": "UNINITIALIZED",
+          "authority": "NONE_ASSIGNED",
+          "mutation": "DENY",
+          "publication": "DENY",
+          "execution": "DENY"
+        },
+        "safe-copy": {
+          "status": "DISABLED",
+          "source": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.source"
+            }
+          },
+          "destination": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.destination"
+            }
+          },
+          "expected-generation": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.expected-generation"
+            }
+          },
+          "validation-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.validation-evidence"
+            }
+          },
+          "copy-receipt": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.copy-receipt"
+            }
+          },
+          "integrity-proof": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.integrity-proof"
+            }
+          },
+          "source-protection-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "safe-copy.source-protection-evidence"
+            }
+          },
+          "source-mutation": "DENY",
+          "destination-write": "DENY_UNTIL_AUTHORIZED",
+          "copy-completion": "UNVERIFIED",
+          "commit": "DENY_UNTIL_VALIDATED",
+          "on-failure": "ABORT_PRESERVE_SOURCE"
+        },
+        "backup": {
+          "status": "DISABLED",
+          "backup-destination": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.backup-destination"
+            }
+          },
+          "source-generation": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.source-generation"
+            }
+          },
+          "retention-policy": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.retention-policy"
+            }
+          },
+          "backup-manifest": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.backup-manifest"
+            }
+          },
+          "verification-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.verification-evidence"
+            }
+          },
+          "restore-point": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.restore-point"
+            }
+          },
+          "independent-copy-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "backup.independent-copy-evidence"
+            }
+          },
+          "automatic-schedule": "DISABLED",
+          "overwrite-source": "DENY",
+          "restore": "DENY_UNTIL_VALIDATED_AND_AUTHORIZED",
+          "on-failure": "PRESERVE_LAST_VERIFIED_COPY"
+        },
+        "fallback": {
+          "status": "DISABLED",
+          "candidate": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.candidate"
+            }
+          },
+          "eligibility-conditions": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.eligibility-conditions"
+            }
+          },
+          "required-capabilities": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.required-capabilities"
+            }
+          },
+          "authority-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.authority-evidence"
+            }
+          },
+          "compatibility-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.compatibility-evidence"
+            }
+          },
+          "handoff-receipt": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "fallback.handoff-receipt"
+            }
+          },
+          "automatic-selection": "DENY",
+          "authority-inheritance": "DENY",
+          "on-ineligible": "HALT",
+          "on-missing-candidate": "HALT"
+        },
+        "recovery": {
+          "status": "DISABLED",
+          "failure-record": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.failure-record"
+            }
+          },
+          "recovery-plan": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.recovery-plan"
+            }
+          },
+          "authorizing-actor": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.authorizing-actor"
+            }
+          },
+          "last-verified-checkpoint": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.last-verified-checkpoint"
+            }
+          },
+          "validation-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.validation-evidence"
+            }
+          },
+          "reconstruction-source": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.reconstruction-source"
+            }
+          },
+          "recovery-receipt": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "recovery.recovery-receipt"
+            }
+          },
+          "automatic-recovery": "DENY",
+          "original-mutation": "DENY",
+          "verification": "REQUIRED_BEFORE_REPUBLISH",
+          "on-unknown-state": "ISOLATE_AND_HALT",
+          "on-unavailable-supervisor": "HALT"
+        },
+        "integrity": {
+          "status": "DISABLED",
+          "validation-policy": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "integrity.validation-policy"
+            }
+          },
+          "expected-digest": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "integrity.expected-digest"
+            }
+          },
+          "measured-digest": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "integrity.measured-digest"
+            }
+          },
+          "witness": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "integrity.witness"
+            }
+          },
+          "verification-receipt": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "integrity.verification-receipt"
+            }
+          },
+          "publish-without-validation": "DENY",
+          "digest-algorithm": {
+            "$sentinel": "UNCONFIGURED"
+          },
+          "on-mismatch": "DENY_AND_QUARANTINE"
+        },
+        "audit": {
+          "status": "DISABLED",
+          "event-stream": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "audit.event-stream"
+            }
+          },
+          "fault-record": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "audit.fault-record"
+            }
+          },
+          "provenance-record": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "audit.provenance-record"
+            }
+          },
+          "transition-history": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "audit.transition-history"
+            }
+          },
+          "approval-evidence": {
+            "$cry-ref": {
+              "context": "safety",
+              "item": "audit.approval-evidence"
+            }
+          },
+          "silent-error-suppression": "DENY",
+          "on-audit-failure": "DENY_UNSAFE_TRANSITION"
+        }
+      }
+    },
+    "block-2": {
+      "arbitrary-data": {
+        "schema_version": "1.0",
+        "kind": "bound_orchestration_reference",
+        "mode": "reference_only",
+        "memory_state_source": {
+          "schema": "mars-tool-less-core-seed/0.3.0",
+          "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
+          "url": "https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json"
+        },
+        "orchestration": {
+          "direction": "sentinel_contract_determines_capabilities",
+          "secondary_seed": {
+            "id": "mill_evidence_workplace",
+            "status": "illustrative",
+            "path": "SYSTEMS_DEPLOYMENT.md",
+            "section": "eject-a-seed-after-review",
+            "system_id": "mill_evidence_workplace",
+            "local_bindings": [
+              "receipt store",
+              "evidence root",
+              "instrumented read adapter",
+              "operator authority"
+            ]
+          },
+          "selection_order": [
+            "Read the current condition and its rule.",
+            "Intersect the rule operation with the vector capability declaration.",
+            "Resolve the declared capability in the receiving system and check local binding and authority.",
+            "If no authorized binding exists, retain the state and report the condition to the surrounding system."
+          ],
+          "transition_rule": "Only the declared state contract maps accepted evidence or a classified boundary outcome to a sentinel. Capability inventory and raw tool output cannot select or clear sentinels."
+        },
+        "preservation": {
+          "required_survivor": "last_committed_memory_state_json",
+          "attempt_record": "separate",
+          "handling_owner": "surrounding_system",
+          "promotion": "Replace committed state only after the declared evidence and acceptance conditions are met.",
+          "retry": "Requires an explicit recovery decision under the receiving system rules."
+        },
+        "sentinels": {
+          "SENTINEL_UNRESOLVED": {
+            "meaning": "A required choice or binding is unresolved.",
+            "permitted_next_operation": "request_decision",
+            "clear_when": "The responsible operator establishes the decision or binding."
+          },
+          "SENTINEL_UNKNOWN": {
+            "meaning": "Available evidence cannot establish the state value.",
+            "permitted_next_operation": "read_evidence",
+            "clear_when": "Accepted evidence establishes the value."
+          },
+          "SENTINEL_TOOL_UNBOUND": {
+            "meaning": "The required capability has no verified local binding.",
+            "permitted_next_operation": "request_binding",
+            "clear_when": "The receiving system verifies a local binding and authority."
+          },
+          "SENTINEL_ACCESS_DENIED": {
+            "meaning": "The bound operation lacks access or authority.",
+            "permitted_next_operation": "request_access_review",
+            "clear_when": "Authorized review confirms access and permission for this operation."
+          },
+          "SENTINEL_TOOL_ERROR": {
+            "meaning": "A returned error or result failed the operation contract.",
+            "permitted_next_operation": "request_recovery_review",
+            "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
+          },
+          "SENTINEL_TOOL_EXCEPTION": {
+            "meaning": "An exception interrupted the operation.",
+            "permitted_next_operation": "request_recovery_review",
+            "clear_when": "The surrounding system records an authorized resolution and accepts the required evidence."
+          }
+        },
+        "condition_fields": [
+          "sentinel",
+          "vector_id",
+          "capability_id",
+          "attempted_operation",
+          "evidence_reference"
+        ],
+        "vectors": [
+          {
+            "id": "S1",
+            "name": "History",
+            "required_capabilities": [
+              {
+                "id": "read_receipts",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S2",
+            "name": "Trajectory",
+            "required_capabilities": [
+              {
+                "id": "read_progress_records",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S3",
+            "name": "Present",
+            "required_capabilities": [
+              {
+                "id": "read_current_records",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S4",
+            "name": "Origin",
+            "required_capabilities": [
+              {
+                "id": "read_source_baseline",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S5",
+            "name": "Destination",
+            "required_capabilities": [
+              {
+                "id": "read_accepted_goals",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S6",
+            "name": "Accomplishments",
+            "required_capabilities": [
+              {
+                "id": "read_verified_results",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S7",
+            "name": "Intentions",
+            "required_capabilities": [
+              {
+                "id": "read_intent_records",
+                "operation": "read_evidence"
+              }
+            ]
+          },
+          {
+            "id": "S8",
+            "name": "Obligations",
+            "required_capabilities": [
+              {
+                "id": "read_authority_records",
+                "operation": "read_evidence"
+              }
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "mill_evidence_workplace",
+            "status": "illustrative",
+            "capabilities": [
+              {
+                "id": "read_receipts",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND",
+                "receipt_source": "https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/mill-controllers/creation/controller.py",
+                "tool": "Locally selected read-only receipt reader",
+                "microcontroller": "Proposed bounded retrieval of one receipt by request ID",
+                "adapter": "Proposed mapping from a reviewed request ID to the local receipt record",
+                "glue": "Pass receipt and provenance reference to History refresh review",
+                "evidence": "Receipt JSON and source reference"
+              },
+              {
+                "id": "read_progress_records",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_current_records",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_source_baseline",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_accepted_goals",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_verified_results",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_intent_records",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              },
+              {
+                "id": "read_authority_records",
+                "operation": "read_evidence",
+                "binding_status": "SENTINEL_TOOL_UNBOUND"
+              }
+            ],
+            "operator_operations": [
+              "request_decision",
+              "request_binding",
+              "request_access_review",
+              "request_recovery_review"
+            ]
+          }
+        ],
+        "history_example": {
+          "vector_id": "S1",
+          "initial_condition": "SENTINEL_UNKNOWN",
+          "required_capability": "read_receipts",
+          "operation": "read_evidence",
+          "cases": [
+            {
+              "outcome": "No verified local binding",
+              "next_condition": "SENTINEL_TOOL_UNBOUND",
+              "next_operation": "request_binding"
+            },
+            {
+              "outcome": "Operation denied",
+              "next_condition": "SENTINEL_ACCESS_DENIED",
+              "next_operation": "request_access_review"
+            },
+            {
+              "outcome": "Operation raises an exception",
+              "next_condition": "SENTINEL_TOOL_EXCEPTION",
+              "next_operation": "request_recovery_review"
+            }
+          ]
+        }
+      }
+    },
+    "block-3": {
+      "context-index": {
+        "context-selectors": {
+          "core": "ctx:core",
+          "active": {
+            "$sentinel": "UNBOUND"
+          },
+          "safety": "ctx:safety"
+        },
+        "matches": {
+          "ctx:active-template": {
+            "identification.affiliations": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "identification.affiliations"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "identification.contextual-role": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "identification.contextual-role"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "identification.designation": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "identification.designation"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "identification.external-identifiers": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "identification.external-identifiers"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.boundaries": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.boundaries"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.components": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.components"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.dependencies": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.dependencies"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.disclosure-status": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.disclosure-status"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.displayed": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.displayed"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.expressed": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.expressed"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.observed": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.observed"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.relations": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.relations"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.beneficiary": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.beneficiary"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.cause": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.cause"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.constraints": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.constraints"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.instrument": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.instrument"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.manner": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.manner"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.means": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.means"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.method": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.method"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.mode": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.mode"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.necessity": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.necessity"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.observed-use": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.observed-use"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.purpose": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.purpose"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.reason": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.reason"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "structure.use.reported-use": {
+              "target": {
+                "context": "ctx:active-template",
+                "item": "structure.use.reported-use"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            }
+          },
+          "ctx:core": {
+            "core.constitution": {
+              "target": {
+                "context": "ctx:core",
+                "item": "core.constitution"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "core.continuity": {
+              "target": {
+                "context": "ctx:core",
+                "item": "core.continuity"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "core.lineage": {
+              "target": {
+                "context": "ctx:core",
+                "item": "core.lineage"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.secrets.disclosure-boundaries": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.secrets.disclosure-boundaries"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.secrets.protected-information": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.secrets.protected-information"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.known-limitations": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.known-limitations"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.self-assessed-criticality": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.self-assessed-criticality"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.self-assessed-necessity": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.self-assessed-necessity"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.self-assessed-value": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.self-assessed-value"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.self-assessed-worth": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.self-assessed-worth"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "ego.self-identification.self-description": {
+              "target": {
+                "context": "ctx:core",
+                "item": "ego.self-identification.self-description"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            }
+          },
+          "ctx:safety": {
+            "audit.approval-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "audit.approval-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "audit.event-stream": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "audit.event-stream"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "audit.fault-record": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "audit.fault-record"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "audit.provenance-record": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "audit.provenance-record"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "audit.transition-history": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "audit.transition-history"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.backup-destination": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.backup-destination"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.backup-manifest": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.backup-manifest"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.independent-copy-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.independent-copy-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.restore-point": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.restore-point"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.retention-policy": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.retention-policy"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.source-generation": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.source-generation"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "backup.verification-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "backup.verification-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.authority-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.authority-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.candidate": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.candidate"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.compatibility-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.compatibility-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.eligibility-conditions": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.eligibility-conditions"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.handoff-receipt": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.handoff-receipt"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "fallback.required-capabilities": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "fallback.required-capabilities"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "integrity.expected-digest": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "integrity.expected-digest"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "integrity.measured-digest": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "integrity.measured-digest"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "integrity.validation-policy": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "integrity.validation-policy"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "integrity.verification-receipt": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "integrity.verification-receipt"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "integrity.witness": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "integrity.witness"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.authorizing-actor": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.authorizing-actor"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.failure-record": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.failure-record"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.last-verified-checkpoint": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.last-verified-checkpoint"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.reconstruction-source": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.reconstruction-source"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.recovery-plan": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.recovery-plan"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.recovery-receipt": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.recovery-receipt"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "recovery.validation-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "recovery.validation-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.copy-receipt": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.copy-receipt"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.destination": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.destination"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.expected-generation": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.expected-generation"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.integrity-proof": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.integrity-proof"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.source": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.source"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.source-protection-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.source-protection-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            },
+            "safe-copy.validation-evidence": {
+              "target": {
+                "context": "ctx:safety",
+                "item": "safe-copy.validation-evidence"
+              },
+              "lock": {
+                "$sentinel": "UNCONFIGURED"
+              },
+              "status": "INACTIVE_UNVERIFIED"
+            }
+          }
+        }
+      }
+    },
+    "block-4": {
+      "context-records": {
+        "ctx:active-template": {
+          "identification.affiliations": {
+            "$sentinel": "UNRECORDED"
+          },
+          "identification.contextual-role": {
+            "$sentinel": "UNRECORDED"
+          },
+          "identification.designation": {
+            "$sentinel": "UNRECORDED"
+          },
+          "identification.external-identifiers": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.boundaries": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.components": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.dependencies": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.disclosure-status": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.displayed": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.expressed": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.observed": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.relations": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.beneficiary": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.cause": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.constraints": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.instrument": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.manner": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.means": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.method": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.mode": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.necessity": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.observed-use": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.purpose": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.reason": {
+            "$sentinel": "UNRECORDED"
+          },
+          "structure.use.reported-use": {
+            "$sentinel": "UNRECORDED"
+          }
+        },
+        "ctx:core": {
+          "core.constitution": {
+            "$sentinel": "UNRECORDED"
+          },
+          "core.continuity": {
+            "$sentinel": "UNRECORDED"
+          },
+          "core.lineage": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.secrets.disclosure-boundaries": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.secrets.protected-information": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.known-limitations": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.self-assessed-criticality": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.self-assessed-necessity": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.self-assessed-value": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.self-assessed-worth": {
+            "$sentinel": "UNRECORDED"
+          },
+          "ego.self-identification.self-description": {
+            "$sentinel": "UNRECORDED"
+          }
+        },
+        "ctx:safety": {
+          "audit.approval-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "audit.event-stream": {
+            "$sentinel": "UNRECORDED"
+          },
+          "audit.fault-record": {
+            "$sentinel": "UNRECORDED"
+          },
+          "audit.provenance-record": {
+            "$sentinel": "UNRECORDED"
+          },
+          "audit.transition-history": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.backup-destination": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.backup-manifest": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.independent-copy-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.restore-point": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.retention-policy": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.source-generation": {
+            "$sentinel": "UNRECORDED"
+          },
+          "backup.verification-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.authority-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.candidate": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.compatibility-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.eligibility-conditions": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.handoff-receipt": {
+            "$sentinel": "UNRECORDED"
+          },
+          "fallback.required-capabilities": {
+            "$sentinel": "UNRECORDED"
+          },
+          "integrity.expected-digest": {
+            "$sentinel": "UNRECORDED"
+          },
+          "integrity.measured-digest": {
+            "$sentinel": "UNRECORDED"
+          },
+          "integrity.validation-policy": {
+            "$sentinel": "UNRECORDED"
+          },
+          "integrity.verification-receipt": {
+            "$sentinel": "UNRECORDED"
+          },
+          "integrity.witness": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.authorizing-actor": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.failure-record": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.last-verified-checkpoint": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.reconstruction-source": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.recovery-plan": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.recovery-receipt": {
+            "$sentinel": "UNRECORDED"
+          },
+          "recovery.validation-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.copy-receipt": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.destination": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.expected-generation": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.integrity-proof": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.source": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.source-protection-evidence": {
+            "$sentinel": "UNRECORDED"
+          },
+          "safe-copy.validation-evidence": {
+            "$sentinel": "UNRECORDED"
+          }
+        }
+      }
+    }
   }
 }
