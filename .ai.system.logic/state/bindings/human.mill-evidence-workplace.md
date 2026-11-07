@@ -4,6 +4,8 @@ This illustrative system declares capabilities and a secondary seed. Local autho
 
 [Source JSON](ai.mill-evidence-workplace.json)
 
+Record identity · kind `system_capability_binding` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use this as an illustrative inventory of a receiving system and its secondary seed.
@@ -73,3 +75,10 @@ Match the operation permitted by the sentinel to a vector requirement and a decl
       - `request_recovery_review`
 - `state_contract` — `.ai.system.logic/state/contracts/ai.memory-state.json`
 - `sentinel_contract` — `.ai.system.logic/state/contracts/ai.sentinel-transitions.json`
+
+## Direct record references
+
+- [human.SYSTEMS_DEPLOYMENT.md](../../human.SYSTEMS_DEPLOYMENT.md)
+- [ai.memory-state.json](../contracts/ai.memory-state.json) · [Human companion](../contracts/human.memory-state.md)
+- [ai.sentinel-transitions.json](../contracts/ai.sentinel-transitions.json) · [Human companion](../contracts/human.sentinel-transitions.md)
+- [controller.py](https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/mill-controllers/creation/controller.py) at 7a156a3

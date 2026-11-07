@@ -4,6 +4,8 @@ Resolve the pinned repository, revision, path, and optional selector. Place valu
 
 [Source JSON](ai.json-reference-composition.json)
 
+Record identity · kind `json_reference_composition_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Resolve each input at the declared revision before assembling a candidate.

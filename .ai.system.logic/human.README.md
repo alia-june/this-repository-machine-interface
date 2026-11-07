@@ -37,6 +37,8 @@ See the [safe-copy contract](construction/contracts/ai.safe-copy.json) and [rece
 
 ## Human-readable JSON records
 
+Use the [project JSON map](human.PROJECT_JSON_MAP.md) to follow the records by function, find their companions, and locate direct dependencies.
+
 - [Lattice Universal Construct template](human.Lattice_Universal_Construct_Empty_Blocks.md)
 - [Memory-state orchestration index](human.MEMORY_STATE_ORCHESTRATION.md)
 - [JSON reference and composition](construction/contracts/human.json-reference-composition.md)

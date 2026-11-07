@@ -4,6 +4,8 @@ Copy a complete pinned bundle to a distinct unused destination. Verify both memb
 
 [Source JSON](ai.safe-copy.json)
 
+Record identity · kind `safe_copy_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use this contract when the requested result is a complete, verified copy at a new destination.
@@ -58,3 +60,7 @@ Check the pinned manifest against the source first. Enforce exclusive creation a
   - `attempt` — Keep the attempt receipt and evidence separate from the source and record whether partial destination state was observed.
   - `handling_owner` — `receiving_system`
   - `recovery` — Recovery, deletion, and retry require an authorized decision.
+
+## Direct record references
+
+- [ai.safe-copy-receipt.json](../receipts/ai.safe-copy-receipt.json) · [Human companion](../receipts/human.safe-copy-receipt.md)

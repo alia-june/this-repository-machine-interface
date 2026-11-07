@@ -4,6 +4,8 @@ Each of the eight vectors declares the tooling it needs. Preserve the last commi
 
 [Source JSON](ai.memory-state.json)
 
+Record identity · kind `memory_state_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use the vector inventory to identify the capability a state refresh needs.
@@ -79,3 +81,7 @@ Retain the last committed JSON as the survivor when a refresh fails. Keep the at
   - `handling_owner` — `surrounding_system`
   - `promotion` — Replace committed state only after the declared evidence and acceptance conditions are met.
   - `retry` — Requires an explicit recovery decision under the receiving system rules.
+
+## Direct record references
+
+- [WORKSPACE_SEED.json](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json) at a73a88a

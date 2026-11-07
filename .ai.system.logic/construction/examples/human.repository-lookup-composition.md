@@ -4,6 +4,8 @@ The pinned request and response contracts occupy separate slots. The expected sl
 
 [Source JSON](ai.repository-lookup-composition.json)
 
+Record identity · kind `json_reference_composition_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Resolve the two inputs separately and compare each selected kind to its expected slot.
@@ -32,3 +34,9 @@ The request slot governs admission. The response slot governs evidence and discl
 - `expected_slots`
   - `request_contract` — `repository_lookup_request_contract`
   - `response_contract` — `repository_lookup_response_contract`
+
+## Direct record references
+
+- [ai.json-reference-composition.json](../contracts/ai.json-reference-composition.json) · [Human companion](../contracts/human.json-reference-composition.md)
+- [repository-lookup-request.json](https://github.com/alia-june/this-repository-machine-interface/blob/b5a4e8cf7a2524a73a96855952ffef653c55f0d0/.ai.system.logic/exchange/contracts/repository-lookup-request.json) at b5a4e8c, selector `/construct/block-2/arbitrary-data`
+- [repository-lookup-response.json](https://github.com/alia-june/this-repository-machine-interface/blob/b5a4e8cf7a2524a73a96855952ffef653c55f0d0/.ai.system.logic/exchange/contracts/repository-lookup-response.json) at b5a4e8c, selector `/construct/block-2/arbitrary-data`

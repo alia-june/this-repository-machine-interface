@@ -4,6 +4,8 @@ Unknown History permits an evidence read. An unbound reader calls for a binding 
 
 [Source JSON](ai.history-refresh.json)
 
+Record identity · kind `history_refresh_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Trace the worked History refresh from an unknown value to a boundary outcome.
@@ -34,3 +36,9 @@ An evidence read is eligible under the unknown condition. A missing binding, den
       - `outcome` — Operation raises an exception
       - `next_condition` — `SENTINEL_TOOL_EXCEPTION`
       - `next_operation` — `request_recovery_review`
+
+## Direct record references
+
+- [ai.mill-evidence-workplace.json](../bindings/ai.mill-evidence-workplace.json) · [Human companion](../bindings/human.mill-evidence-workplace.md)
+- [ai.memory-state.json](../contracts/ai.memory-state.json) · [Human companion](../contracts/human.memory-state.md)
+- [ai.sentinel-transitions.json](../contracts/ai.sentinel-transitions.json) · [Human companion](../contracts/human.sentinel-transitions.md)

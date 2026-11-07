@@ -4,6 +4,8 @@ Start with one documentation lookup and an unresolved target. Resolve the pinned
 
 [Source JSON](ai.repository-lookup-project-germ.json)
 
+Record identity · kind `project_germ_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Begin with one documentation question and resolve only the contracts needed for that step.
@@ -40,3 +42,7 @@ The initial target condition is unresolved. Ask for a unique repository if conte
     - `preserve`
       - committed germ
       - request context
+
+## Direct record references
+
+- [ai.repository-lookup-project-seed.json](https://github.com/alia-june/this-repository-machine-interface/blob/76f2c20c3a94d5dd788f989de1cf6f35e143d98d/.ai.system.logic/construction/examples/ai.repository-lookup-project-seed.json) at 76f2c20, selector `/construct/block-2/arbitrary-data`

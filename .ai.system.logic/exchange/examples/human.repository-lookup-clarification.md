@@ -4,6 +4,8 @@ The request leaves the repository ambiguous. The response preserves the request 
 
 [Source JSON](ai.repository-lookup-clarification.json)
 
+Record identity · kind `repository_lookup_exchange_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Trace what happens when a well-formed request has no unique repository target.
@@ -34,3 +36,8 @@ The missing context prevents a dependent lookup. The response preserves correlat
     - `recipient` — `calling_ai`
     - `next` — `request_target_or_context`
     - `question` — Which repository should I look in?
+
+## Direct record references
+
+- [ai.repository-lookup-request.json](../contracts/ai.repository-lookup-request.json) · [Human companion](../contracts/human.repository-lookup-request.md)
+- [ai.repository-lookup-response.json](../contracts/ai.repository-lookup-response.json) · [Human companion](../contracts/human.repository-lookup-response.md)

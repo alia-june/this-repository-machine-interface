@@ -4,6 +4,8 @@ Use the admitted request to select the applicable operation and evidence require
 
 [Source JSON](../../ai.launch.pad.json)
 
+Record identity · kind `ai_launch_pad` · version `1.3` · mode `reference_only`
+
 ## How to use this record
 
 Start after admission and identify the operation and the evidence it requires.
@@ -83,3 +85,11 @@ For versioned documentation, resolve the selected revision to a commit before ci
     - applicable authority and explicit approval
     - required evidence and validation
   - `handoff` — Return the proposed scope and unresolved requirements to the calling AI before extraction.
+
+## Direct record references
+
+- [ai.repository-lookup-request.json](../exchange/contracts/ai.repository-lookup-request.json) · [Human companion](../exchange/contracts/human.repository-lookup-request.md)
+- [ai.repository-lookup-response.json](../exchange/contracts/ai.repository-lookup-response.json) · [Human companion](../exchange/contracts/human.repository-lookup-response.md)
+- [human.SYSTEMS_DEPLOYMENT.md](../human.SYSTEMS_DEPLOYMENT.md)
+- [ai.sentinel-transitions.json](../state/contracts/ai.sentinel-transitions.json) · [Human companion](../state/contracts/human.sentinel-transitions.md)
+- [ai.landing.pad.json](../../ai.landing.pad.json) · [Human companion](human.landing.pad.md)

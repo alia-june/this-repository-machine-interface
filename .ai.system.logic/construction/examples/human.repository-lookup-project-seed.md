@@ -4,6 +4,8 @@ The candidate retains request and response contracts and three validation cases 
 
 [Source JSON](ai.repository-lookup-project-seed.json)
 
+Record identity · kind `project_seed_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use this as an illustrative extraction of the exchange for a receiving project.
@@ -73,3 +75,12 @@ The retained contracts supply the rules. The three paired examples supply valida
       - `revision` — `0d3796330a3e6fbb09b5441a08b411f08dcecd1b`
       - `path` — `.ai.system.logic/exchange/examples/ai.repository-lookup-disclosure-blocked.json`
       - `selector` — `/construct/block-2/arbitrary-data`
+
+## Direct record references
+
+- [ai.repository-lookup-composition.json](https://github.com/alia-june/this-repository-machine-interface/blob/0d3796330a3e6fbb09b5441a08b411f08dcecd1b/.ai.system.logic/construction/examples/ai.repository-lookup-composition.json) at 0d37963, selector `/construct/block-2/arbitrary-data`
+- [ai.repository-lookup-cited-answer.json](https://github.com/alia-june/this-repository-machine-interface/blob/0d3796330a3e6fbb09b5441a08b411f08dcecd1b/.ai.system.logic/exchange/examples/ai.repository-lookup-cited-answer.json) at 0d37963, selector `/construct/block-2/arbitrary-data`
+- [ai.repository-lookup-clarification.json](https://github.com/alia-june/this-repository-machine-interface/blob/0d3796330a3e6fbb09b5441a08b411f08dcecd1b/.ai.system.logic/exchange/examples/ai.repository-lookup-clarification.json) at 0d37963, selector `/construct/block-2/arbitrary-data`
+- [ai.repository-lookup-disclosure-blocked.json](https://github.com/alia-june/this-repository-machine-interface/blob/0d3796330a3e6fbb09b5441a08b411f08dcecd1b/.ai.system.logic/exchange/examples/ai.repository-lookup-disclosure-blocked.json) at 0d37963, selector `/construct/block-2/arbitrary-data`
+- [repository-lookup-request.json](https://github.com/alia-june/this-repository-machine-interface/blob/b5a4e8cf7a2524a73a96855952ffef653c55f0d0/.ai.system.logic/exchange/contracts/repository-lookup-request.json) at b5a4e8c, selector `/construct/block-2/arbitrary-data`
+- [repository-lookup-response.json](https://github.com/alia-june/this-repository-machine-interface/blob/b5a4e8cf7a2524a73a96855952ffef653c55f0d0/.ai.system.logic/exchange/contracts/repository-lookup-response.json) at b5a4e8c, selector `/construct/block-2/arbitrary-data`

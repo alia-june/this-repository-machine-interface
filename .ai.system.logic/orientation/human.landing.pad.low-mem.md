@@ -4,6 +4,8 @@ Load the route the current request needs. The pinned seed identifies where the g
 
 [Source JSON](../../ai.landing.pad.low-mem.json)
 
+Record identity · kind `ai_low_memory_landing_pad` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use the germ for the first AI read. Load the route needed for the current request.
@@ -26,3 +28,11 @@ The seed reference is provenance. Read the named file at its pinned commit when 
   - `repository` — `alia-june/this-repository-machine-interface`
   - `revision` — `446afb2546bd8f9bace360a4b66f65554a088b6c`
   - `path` — `ai.landing.pad.json`
+
+## Direct record references
+
+- [ai.egress.json](../../ai.egress.json) · [Human companion](human.egress.md)
+- [ai.ingress.json](../../ai.ingress.json) · [Human companion](human.ingress.md)
+- [ai.landing.pad.json](../../ai.landing.pad.json) · [Human companion](human.landing.pad.md)
+- [ai.launch.pad.json](../../ai.launch.pad.json) · [Human companion](human.launch.pad.md)
+- [ai.landing.pad.json](https://github.com/alia-june/this-repository-machine-interface/blob/446afb2546bd8f9bace360a4b66f65554a088b6c/ai.landing.pad.json) at 446afb2

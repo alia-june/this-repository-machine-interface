@@ -4,6 +4,8 @@ Follow this index to the state contract, sentinel transitions, receiving-system 
 
 [Source JSON](ai.MEMORY_STATE_ORCHESTRATION.json)
 
+Record identity · kind `bound_orchestration_reference` · version `1.1` · mode `reference_only`
+
 ## How to use this record
 
 Use this index to locate the governing state, sentinel, binding, and example records.
@@ -19,3 +21,10 @@ Resolve the state contract for the survivor, the sentinel contract for eligible 
   - `sentinel_contract` — `.ai.system.logic/state/contracts/ai.sentinel-transitions.json`
   - `history_example` — `.ai.system.logic/state/examples/ai.history-refresh.json`
   - `reference_failure` — Stop the dependent operation, preserve the required committed JSON, and record the unresolved reference separately.
+
+## Direct record references
+
+- [ai.mill-evidence-workplace.json](state/bindings/ai.mill-evidence-workplace.json) · [Human companion](state/bindings/human.mill-evidence-workplace.md)
+- [ai.memory-state.json](state/contracts/ai.memory-state.json) · [Human companion](state/contracts/human.memory-state.md)
+- [ai.sentinel-transitions.json](state/contracts/ai.sentinel-transitions.json) · [Human companion](state/contracts/human.sentinel-transitions.md)
+- [ai.history-refresh.json](state/examples/ai.history-refresh.json) · [Human companion](state/examples/human.history-refresh.md)

@@ -4,6 +4,8 @@ Record source, destination, manifest, checks performed, and evidence. Record par
 
 [Source JSON](ai.safe-copy-receipt.json)
 
+Record identity · kind `safe_copy_receipt_form` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Fill out this form after a copy attempt using evidence the receiving system actually observed.
@@ -34,3 +36,7 @@ An attempt can leave a destination behind and still be unverified. Keep checks t
   - `verification` — Record source manifest comparison, exclusive destination creation, destination member and digest comparison, and observed partial state. Use explicit conditions for checks that were not performed or could not be established.
   - `evidence_references` — References to the evidence actually retained for this attempt.
 - `claim_rule` — Only the verified outcome can assert verified_copy. All other outcomes record an attempt and its observed conditions.
+
+## Direct record references
+
+- [ai.safe-copy.json](../contracts/ai.safe-copy.json) · [Human companion](../contracts/human.safe-copy.md)

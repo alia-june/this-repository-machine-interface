@@ -4,6 +4,8 @@ The question asks where the site defines Crete naming. The response uses the sam
 
 [Source JSON](ai.repository-lookup-cited-answer.json)
 
+Record identity · kind `repository_lookup_exchange_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Trace this pair from an admitted documentation lookup to a cited answer.
@@ -37,3 +39,9 @@ Compare both request IDs, resolve the cited encoding notes at the recorded commi
   - `handoff`
     - `recipient` — `calling_ai`
     - `next` — `return_cited_answer`
+
+## Direct record references
+
+- [ai.repository-lookup-request.json](../contracts/ai.repository-lookup-request.json) · [Human companion](../contracts/human.repository-lookup-request.md)
+- [ai.repository-lookup-response.json](../contracts/ai.repository-lookup-response.json) · [Human companion](../contracts/human.repository-lookup-response.md)
+- [ENCODING_NOTES.md](https://github.com/alia-june/this-repository-machine-interface/blob/b5a4e8cf7a2524a73a96855952ffef653c55f0d0/.ai.system.logic/ENCODING_NOTES.md) at b5a4e8c

@@ -4,6 +4,8 @@ Echo the request ID and return the applicable answer, lookup plan, clarification
 
 [Source JSON](ai.repository-lookup-response.json)
 
+Record identity · kind `repository_lookup_response_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use the response contract to turn a lookup result into a correlated handoff.
@@ -64,3 +66,9 @@ Select an outcome before filling its required fields. Check disclosure independe
     - `blocked`
   - `unresolved_reference`
     - `blocked`
+
+## Direct record references
+
+- [ai.MEMORY_STATE_ORCHESTRATION.json](../../ai.MEMORY_STATE_ORCHESTRATION.json) · [Human companion](../../human.MEMORY_STATE_ORCHESTRATION.md)
+- [ai.repository-lookup-request.json](ai.repository-lookup-request.json) · [Human companion](human.repository-lookup-request.md)
+- [ai.egress.json](../../../ai.egress.json) · [Human companion](../../orientation/human.egress.md)

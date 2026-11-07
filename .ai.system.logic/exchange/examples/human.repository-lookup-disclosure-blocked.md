@@ -4,6 +4,8 @@ The synthetic request is admitted, but the recipient cannot receive the evidence
 
 [Source JSON](ai.repository-lookup-disclosure-blocked.json)
 
+Record identity · kind `repository_lookup_exchange_example` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Trace a synthetic disclosure failure after admission.
@@ -36,3 +38,8 @@ The recipient boundary prevents returning the supporting material. The response 
   - `handoff`
     - `recipient` — `calling_ai`
     - `next` — `stop_dependent_lookup_or_disclosure`
+
+## Direct record references
+
+- [ai.repository-lookup-request.json](../contracts/ai.repository-lookup-request.json) · [Human companion](../contracts/human.repository-lookup-request.md)
+- [ai.repository-lookup-response.json](../contracts/ai.repository-lookup-response.json) · [Human companion](../contracts/human.repository-lookup-response.md)

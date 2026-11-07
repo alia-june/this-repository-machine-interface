@@ -4,6 +4,8 @@ Establish the request ID, operation, and applicable context before dependent wor
 
 [Source JSON](../../ai.ingress.json)
 
+Record identity · kind `ingress_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Validate the envelope before selecting or reading evidence.
@@ -51,3 +53,15 @@ For a documentation lookup, establish the request ID, operation, and query. An a
     - `next` — `stop_dependent_operation`
     - `sentinel` — `SENTINEL_ACCESS_DENIED`
 - `repository_lookup_request_contract` — `.ai.system.logic/exchange/contracts/ai.repository-lookup-request.json`
+
+## Direct record references
+
+- [ai.MEMORY_STATE_ORCHESTRATION.json](../ai.MEMORY_STATE_ORCHESTRATION.json) · [Human companion](../human.MEMORY_STATE_ORCHESTRATION.md)
+- [ai.repository-lookup-request.json](../exchange/contracts/ai.repository-lookup-request.json) · [Human companion](../exchange/contracts/human.repository-lookup-request.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/context_reference` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/ingress` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/launch_pad` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/sentinel` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.egress.json](../../ai.egress.json) · [Human companion](human.egress.md)
+- [ai.landing.pad.json](../../ai.landing.pad.json) · [Human companion](human.landing.pad.md)
+- [ai.launch.pad.json](../../ai.launch.pad.json) · [Human companion](human.launch.pad.md)

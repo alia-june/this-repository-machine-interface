@@ -4,6 +4,8 @@ Supply the request ID, operation, and query. Establish a unique repository and p
 
 [Source JSON](ai.repository-lookup-request.json)
 
+Record identity · kind `repository_lookup_request_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Identify the caller request and resolve the target before the dependent read.
@@ -42,3 +44,9 @@ Validate the operation and query first. A well-formed request with no unique rep
   - `missing_context` — The request is well formed but the repository or required context cannot be selected uniquely.
   - `denied_access` — Access or authority required for the lookup was denied.
   - `unresolved_reference` — A declared reference cannot be resolved as supplied. Do not substitute another target.
+
+## Direct record references
+
+- [ai.MEMORY_STATE_ORCHESTRATION.json](../../ai.MEMORY_STATE_ORCHESTRATION.json) · [Human companion](../../human.MEMORY_STATE_ORCHESTRATION.md)
+- [ai.repository-lookup-response.json](ai.repository-lookup-response.json) · [Human companion](human.repository-lookup-response.md)
+- [ai.ingress.json](../../../ai.ingress.json) · [Human companion](../../orientation/human.ingress.md)

@@ -4,6 +4,8 @@ Use the expanded seed to establish repository identity and find the front door. 
 
 [Source JSON](../../ai.landing.pad.json)
 
+Record identity · kind `ai_landing_pad` · version `1.3` · mode `reference_only`
+
 ## How to use this record
 
 Start here when the caller is a heuristic engine or needs the expanded orientation record.
@@ -83,3 +85,17 @@ Read the repository identity before carrying target context into ingress. Discov
   - `request_admission` — `ai.ingress.json`
   - `operation_and_handoff` — `ai.launch.pad.json`
   - `response_and_disclosure` — `ai.egress.json`
+
+## Direct record references
+
+- [ai.MEMORY_STATE_ORCHESTRATION.json](../ai.MEMORY_STATE_ORCHESTRATION.json) · [Human companion](../human.MEMORY_STATE_ORCHESTRATION.md)
+- [human.README.md](../human.README.md)
+- [human.SYSTEMS_DEPLOYMENT.md](../human.SYSTEMS_DEPLOYMENT.md)
+- [ai.egress.json](../../ai.egress.json) · [Human companion](human.egress.md)
+- [ai.ingress.json](../../ai.ingress.json) · [Human companion](human.ingress.md)
+- [ai.launch.pad.json](../../ai.launch.pad.json) · [Human companion](human.launch.pad.md)
+- [PUBLICATION_VALIDATION.md](https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/PUBLICATION_VALIDATION.md) at 7a156a3
+- [controller.py](https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/mill-controllers/creation/controller.py) at 7a156a3
+- [New-MillBatch.ps1](https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/mill-factory/New-MillBatch.ps1) at 7a156a3
+- [Test-MillBatch.ps1](https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/mill-factory/Test-MillBatch.ps1) at 7a156a3
+- [WORKSPACE_SEED.json](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json) at a73a88a

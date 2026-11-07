@@ -4,6 +4,8 @@ Correlate the response to the request and select the appropriate outcome. Check 
 
 [Source JSON](../../ai.egress.json)
 
+Record identity · kind `egress_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Use the response boundary to form a correlated result for the calling AI.
@@ -76,3 +78,15 @@ Echo the request ID when it is known. A supported answer carries shareable evide
   - `denied_access`
     - `blocked`
 - `repository_lookup_response_contract` — `.ai.system.logic/exchange/contracts/ai.repository-lookup-response.json`
+
+## Direct record references
+
+- [ai.MEMORY_STATE_ORCHESTRATION.json](../ai.MEMORY_STATE_ORCHESTRATION.json) · [Human companion](../human.MEMORY_STATE_ORCHESTRATION.md)
+- [ai.repository-lookup-response.json](../exchange/contracts/ai.repository-lookup-response.json) · [Human companion](../exchange/contracts/human.repository-lookup-response.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/context_reference` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/egress` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/launch_pad` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.site-lexicon.json](../terminology/lexicons/ai.site-lexicon.json), selector `/construct/block-2/arbitrary-data/terms/sentinel` · [Human companion](../terminology/lexicons/human.site-lexicon.md)
+- [ai.ingress.json](../../ai.ingress.json) · [Human companion](human.ingress.md)
+- [ai.landing.pad.json](../../ai.landing.pad.json) · [Human companion](human.landing.pad.md)
+- [ai.launch.pad.json](../../ai.launch.pad.json) · [Human companion](human.launch.pad.md)

@@ -4,6 +4,8 @@ The current condition determines which operation may be considered. Each sentine
 
 [Source JSON](ai.sentinel-transitions.json)
 
+Record identity · kind `sentinel_transition_contract` · version `1.0` · mode `reference_only`
+
 ## How to use this record
 
 Start with the current condition and read its operation and clearance rule.
@@ -51,3 +53,7 @@ A capability can be considered only after the condition permits its operation. T
   - `attempted_operation`
   - `evidence_reference`
 - `state_contract` — `.ai.system.logic/state/contracts/ai.memory-state.json`
+
+## Direct record references
+
+- [ai.memory-state.json](ai.memory-state.json) · [Human companion](human.memory-state.md)
