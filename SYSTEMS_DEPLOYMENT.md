@@ -7,9 +7,22 @@
 
 ## Grow a workplace around one useful task
 
-Start from the [portable m.A.R.S. v0.3.0 workplace seed](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json), staged in [xOSG PR #16](https://github.com/alia-june/xOSG-prototype/pull/16). The receiving workplace supplies local goals, authority, and resource bindings.
+Start with the [portable m.A.R.S. v0.3.0 memory state](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json), staged in [xOSG PR #16](https://github.com/alia-june/xOSG-prototype/pull/16). The receiving workplace supplies local goals, authority, and resource bindings.
 
 Declare the task, sources and revisions, operating rules, available capabilities, permitted destinations, and acceptance evidence. Keep source separate from active work and retained receipts. Start with one declared tool and observe its existing contract before proposing any controller. A change to the workplace itself needs its own scope and approval. See [How to grow a living tooling workspace][workspace] and [How to instrument a tool][instrument].
+
+## What the m.A.R.S. memory state composes
+
+The v0.3.0 artifact is an uninstantiated memory-state template. It gives a receiving workplace a structure for restoring context and identifying values it still needs to establish. The upstream filename remains **WORKSPACE_SEED.json** and the schema identifier remains **mars-tool-less-core-seed/0.3.0**.
+
+| Record group | What the template provides |
+| --- | --- |
+| Identity | Five referents: user, agent, workspace, prompt, and history. Identity is recorded separately from intent. |
+| Intent | Four fields for each referent: goal, current task, task queue, and finished task queue. A finished task records work done and leaves goal success to be assessed separately. |
+| State | Eight views: history, trajectory, present, origin, destination, accomplishments, intentions, and obligations. For example, trajectory describes where work is heading, while destination captures where the operator wants it to end up. |
+| Orchestration inventory | Sources, resources, and tools, each tracked as started with, obtained, needed, and acquiring. The receiving operator establishes local resource bindings and authority. |
+
+The template marks the intent fields and resource bindings with **SENTINEL_UNRESOLVED** and marks the state and orchestration vectors with **SENTINEL_UNKNOWN**. Retain those distinctions when handing context to another workplace. Resolve values from evidence and explicit local decisions.
 
 ## Worked example with Mill Factory
 
@@ -37,15 +50,15 @@ Read admission, process outcome, reported creation, structural verification, ret
 
 ## Eject a seed after review
 
-Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For this example the proposed contents are:
+Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For the Mill Factory example, an illustrative deployment seed could carry:
 
-- Workplace purpose, task, and operating boundaries.
+- The m.A.R.S. memory-state records for the workplace purpose, referents, task, and source, resource, and tool inventory, plus the applicable operating boundaries.
 - Pinned tool, controller, and validator identities, plus the request and receipt contracts.
 - The adapter mapping, the declared glue connections, and the failure and recovery rules.
 - Validation references and a record of which results were observed, proposed, or unresolved.
 - Explicit receiving-workplace bindings for source, launcher, output and state roots, and authority. Carry a description of the approval boundary and require the receiving operator to establish local approval.
 
-The Mill recipe is a worked reference for an existing fitted controller. A checkpointed workplace using DWSK is a separate candidate. Its workplace-record mapping, adapter, and recovery behavior require an agreed contract and a verified trial before they can be represented as exercised.
+The memory state carries context. A deployment seed can carry that context together with one instrumented capability and the evidence and conditions for adopting it. The Mill recipe is a source-traced illustration of that composition. A checkpointed workplace using DWSK is a separate candidate. Its workplace-record mapping, adapter, and recovery behavior require an agreed contract and a verified trial before they can be represented as exercised.
 
 [workspace]: https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/WORKSPACE_HOW_TO.md
 [instrument]: https://github.com/alia-june/xOSG-prototype/blob/7a156a314e11e6e4973ab6da23bef32acee81314/Instrumentation/README.md
