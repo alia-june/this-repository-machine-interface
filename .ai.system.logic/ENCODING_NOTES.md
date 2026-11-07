@@ -8,6 +8,8 @@ michael stuart established the site-local Crete convention. Apply the pair befor
 
 Require each source key to exist, each target key to be free in its containing object, and the three target names to be distinct. Stop on collision. Preserve the value under each renamed key. If a reference addresses the renamed key, update it and verify it still resolves. The template retains the original names for provenance.
 
+<!-- cry-ref means crystal-reference. If the reference cannot resolve as declared, let it break before it turns “elderitch.” -->
+
 ## Payload and references
 
 The migration preserves the prior pad and memory-state objects as complete payloads. Their path references keep their existing base directory. The new ingress and egress payloads describe the exchange boundary and point to the root pads. The surrounding Lattice blocks retain the template defaults apart from the three Crete name changes and the payload slot. Site policy for populated safeguards and context records can be specified separately.
