@@ -1,16 +1,15 @@
 {
-  "schema_version": "1.2",
-  "kind": "repository_orientation_hook",
+  "schema_version": "1.3",
+  "kind": "ai_launch_pad",
   "execution_mode": "reference_only",
-  "manifest": "readme.json",
   "steps": [
     {
-      "id": "load_manifest",
-      "instruction": "Resolve the manifest relative to this file and verify the supported schema version."
+      "id": "load_landing_pad",
+      "instruction": "Resolve landing_pad relative to this file and verify the supported schema version."
     },
     {
       "id": "discover_repositories",
-      "instruction": "Use the manifest's discovery endpoint, pagination, and owner filter with the client's existing GitHub access."
+      "instruction": "Use the landing pad discovery endpoint, pagination, and owner filter with the client existing GitHub access."
     },
     {
       "id": "select_repository",
@@ -38,7 +37,7 @@
     "requested_change": "Describe the requested action, relevant sources, and applicable approval. Carry the request into the handoff.",
     "systems_deployment": {
       "intent": "plan_systems_deployment",
-      "guide": "SYSTEMS_DEPLOYMENT.md",
+      "guide": ".ai.system.logic/SYSTEMS_DEPLOYMENT.md",
       "steps": [
         "Surface the instrument-before-use warning.",
         "Identify the intended workplace task and one declared tool.",
@@ -63,5 +62,6 @@
     ],
     "continuation": "The calling AI resumes the chat under the user instructions and applicable repository rules."
   },
-  "interface_boundary": "These records describe decisions and evidence paths. The interface has no executable actions or tool bindings."
+  "interface_boundary": "These records describe decisions and evidence paths. The interface has no executable actions or tool bindings.",
+  "landing_pad": "ai.landing.pad.json"
 }
