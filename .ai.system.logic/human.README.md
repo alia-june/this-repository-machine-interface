@@ -34,3 +34,30 @@ The [memory-state orchestration index](ai.MEMORY_STATE_ORCHESTRATION.json) point
 See the [site lexicon](terminology/lexicons/ai.site-lexicon.json) for shared terms. Find a term by its ID under construct.block-2.arbitrary-data.terms. Follow its source references for the governing material.
 
 See the [safe-copy contract](construction/contracts/ai.safe-copy.json) and [receipt form](construction/receipts/ai.safe-copy-receipt.json) for the source, destination, and verification boundaries of a bundle copy.
+
+## Human-readable JSON records
+
+- [Lattice Universal Construct template](human.Lattice_Universal_Construct_Empty_Blocks.md)
+- [Memory-state orchestration index](human.MEMORY_STATE_ORCHESTRATION.md)
+- [JSON reference and composition](construction/contracts/human.json-reference-composition.md)
+- [Safe-copy contract](construction/contracts/human.safe-copy.md)
+- [Repository lookup composition](construction/examples/human.repository-lookup-composition.md)
+- [Repository lookup project germ](construction/examples/human.repository-lookup-project-germ.md)
+- [Repository lookup project seed](construction/examples/human.repository-lookup-project-seed.md)
+- [Safe-copy receipt form](construction/receipts/human.safe-copy-receipt.md)
+- [Repository lookup request contract](exchange/contracts/human.repository-lookup-request.md)
+- [Repository lookup response contract](exchange/contracts/human.repository-lookup-response.md)
+- [Lookup example with a cited answer](exchange/examples/human.repository-lookup-cited-answer.md)
+- [Lookup example requiring clarification](exchange/examples/human.repository-lookup-clarification.md)
+- [Lookup example blocked at disclosure](exchange/examples/human.repository-lookup-disclosure-blocked.md)
+- [Mill workplace capability bindings](state/bindings/human.mill-evidence-workplace.md)
+- [Memory-state contract](state/contracts/human.memory-state.md)
+- [Sentinel transitions](state/contracts/human.sentinel-transitions.md)
+- [History refresh example](state/examples/human.history-refresh.md)
+- [Mill History germ](state/examples/human.mill-history-germ.md)
+- [Site lexicon](terminology/lexicons/human.site-lexicon.md)
+- [Egress](orientation/human.egress.md)
+- [Ingress](orientation/human.ingress.md)
+- [Heuristic landing pad](orientation/human.landing.pad.md)
+- [AI landing germ](orientation/human.landing.pad.low-mem.md)
+- [Launch pad](orientation/human.launch.pad.md)
