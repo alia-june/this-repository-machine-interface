@@ -589,7 +589,8 @@
             "next": "stop_dependent_operation",
             "sentinel": "SENTINEL_ACCESS_DENIED"
           }
-        }
+        },
+        "repository_lookup_request_contract": ".ai.system.logic/exchange/contracts/repository-lookup-request.json"
       }
     },
     "block-3": {

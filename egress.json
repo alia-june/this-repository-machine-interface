@@ -622,7 +622,8 @@
           "denied_access": [
             "blocked"
           ]
-        }
+        },
+        "repository_lookup_response_contract": ".ai.system.logic/exchange/contracts/repository-lookup-response.json"
       }
     },
     "block-3": {
