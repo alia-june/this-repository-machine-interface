@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "kind": "repository_orientation_manifest",
   "repository": "alia-june/mARS-Live-AI-Interface-Bridge-and-Services",
   "purpose": "Machine-readable man-machine interface for orienting AI to repository requests in chat.",
@@ -42,6 +42,33 @@
       "current implementation",
       "applicable instructions",
       "user approval scope"
+    ],
+    "plan_systems_deployment": [
+      "Systems Deployment guide",
+      "tool and controller contracts",
+      "validation evidence",
+      "seed and receiving workplace bindings"
     ]
+  },
+  "systems_deployment": {
+    "guide": "SYSTEMS_DEPLOYMENT.md",
+    "warning": {
+      "severity": "warning",
+      "policy": "instrument_before_use",
+      "message": "Repeated mechanical work delegated to an LLM orchestrator consumes model credits. Fit deterministic microcontrollers, adapters, and glue before use."
+    },
+    "worked_example": {
+      "id": "mill_factory_create_batch",
+      "section": "worked-example-with-mill-factory",
+      "status": "source_traced_reference",
+      "source_repository": "alia-june/xOSG-prototype",
+      "source_revision": "7a156a314e11e6e4973ab6da23bef32acee81314",
+      "evidence_paths": [
+        "mill-factory/New-MillBatch.ps1",
+        "mill-factory/Test-MillBatch.ps1",
+        "Instrumentation/mill-controllers/creation/controller.py",
+        "Instrumentation/PUBLICATION_VALIDATION.md"
+      ]
+    }
   }
 }

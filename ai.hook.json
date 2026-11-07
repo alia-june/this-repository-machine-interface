@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "kind": "repository_orientation_hook",
   "execution_mode": "reference_only",
   "manifest": "readme.json",
@@ -35,7 +35,18 @@
     "target": "Use the repository and revision identified by the user or chat. Ask when ambiguity affects the answer.",
     "evidence": "For each operation, identify the evidence required and describe the lookup steps. Use evidence already available to the calling AI. Cite the source and revision for each supported answer.",
     "missing_evidence": "State what is missing and how an authorized caller can obtain it. Separate a verified answer from a lookup plan.",
-    "requested_change": "Describe the requested action, relevant sources, and applicable approval. Carry the request into the handoff."
+    "requested_change": "Describe the requested action, relevant sources, and applicable approval. Carry the request into the handoff.",
+    "systems_deployment": {
+      "intent": "plan_systems_deployment",
+      "guide": "SYSTEMS_DEPLOYMENT.md",
+      "steps": [
+        "Surface the instrument-before-use warning.",
+        "Identify the intended workplace task and one declared tool.",
+        "Use the manifest evidence paths to distinguish observed tool behavior from proposed controller, adapter, and glue work.",
+        "Identify the evidence and receiving-workplace bindings required for seed ejection.",
+        "Return findings and lookup steps to the calling AI using the existing handoff."
+      ]
+    }
   },
   "handoff": {
     "next": "return_control_to_calling_ai",
