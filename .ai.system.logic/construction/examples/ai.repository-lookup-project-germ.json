@@ -1,0 +1,86 @@
+{
+  "construct": {
+    "block-0": {
+      "self": {
+        "identification": {
+          "designation": {
+            "$context-ref": {
+              "context": "ctx:page",
+              "item": "identification.designation"
+            }
+          }
+        }
+      }
+    },
+    "block-1": {
+      "safeguards": {
+        "mode": "reference_only"
+      }
+    },
+    "block-2": {
+      "arbitrary-data": {
+        "schema_version": "1.0",
+        "kind": "project_germ_example",
+        "mode": "reference_only",
+        "status": "illustrative",
+        "reference_base": "repository_root",
+        "germ_id": "read_only_repository_lookup_germ",
+        "source_seed": {
+          "repository": "alia-june/this-repository-machine-interface",
+          "revision": "76f2c20c3a94d5dd788f989de1cf6f35e143d98d",
+          "path": ".ai.system.logic/construction/examples/ai.repository-lookup-project-seed.json",
+          "selector": "/construct/block-2/arbitrary-data"
+        },
+        "first_goal": "Answer one documentation question for a uniquely resolved repository.",
+        "initial_context": {
+          "operation": "locate_documentation",
+          "target_condition": "SENTINEL_UNRESOLVED"
+        },
+        "first_steps": [
+          "Resolve the seed and its request_contract slot before admitting the lookup.",
+          "Establish a unique repository and pin versioned evidence before relying on it.",
+          "Resolve the response_contract slot when preparing a correlated and disclosable handoff."
+        ],
+        "branches": {
+          "cited_lookup": {
+            "requires": "A unique target and accepted disclosable evidence at a pinned revision.",
+            "outcome": "answered"
+          },
+          "missing_or_ambiguous_target": {
+            "condition": "SENTINEL_UNRESOLVED",
+            "outcome": "clarification_required",
+            "next": "Ask for the target repository."
+          },
+          "unresolved_reference": {
+            "next": "Stop the dependent lookup and report the unresolved reference.",
+            "preserve": [
+              "committed germ",
+              "request context"
+            ]
+          }
+        }
+      }
+    },
+    "block-3": {
+      "context-index": {
+        "matches": {
+          "ctx:page": {
+            "identification.designation": {
+              "target": {
+                "context": "ctx:page",
+                "item": "identification.designation"
+              }
+            }
+          }
+        }
+      }
+    },
+    "block-4": {
+      "context-records": {
+        "ctx:page": {
+          "identification.designation": "Read-only Repository Lookup Project Germ"
+        }
+      }
+    }
+  }
+}

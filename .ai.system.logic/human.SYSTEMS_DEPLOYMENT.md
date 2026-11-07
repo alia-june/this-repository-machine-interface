@@ -86,6 +86,8 @@ Before extraction, identify the selected project and pinned source revision, the
 
 The [repository lookup project seed](construction/examples/ai.repository-lookup-project-seed.json) is a worked extraction. It selects the pinned request and response contracts as reusable material and retains three paired cases as validation evidence. The receiving project establishes its own source resolution, access, and disclosure rules before adoption.
 
+The [repository lookup project germ](construction/examples/ai.repository-lookup-project-germ.json) is the compact next step. It points back to the pinned project seed, starts with one documentation lookup, and preserves the request context if a required reference fails.
+
 ## Eject a seed after review
 
 Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For the Mill Factory example, an illustrative deployment seed could carry:
