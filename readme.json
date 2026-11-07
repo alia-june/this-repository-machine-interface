@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "kind": "repository_orientation_manifest",
   "repository": "alia-june/mARS-Live-AI-Interface-Bridge-and-Services",
-  "purpose": "Help AI clients discover and orient to repositories owned by alia-june.",
+  "purpose": "Machine-readable man-machine interface for orienting AI to repository requests in chat.",
   "discovery": {
     "provider": "github",
     "owner_login": "alia-june",
@@ -16,5 +16,32 @@
     },
     "access": "Use the client's existing GitHub access. Results are limited to repositories visible to that client."
   },
-  "orientation_hook": "ai.hook.json"
+  "orientation_hook": "ai.hook.json",
+  "audience": "machine",
+  "mode": "reference_only",
+  "human_entrypoint": "README.md",
+  "intent_index": {
+    "discover_repository": [
+      "owner-scoped repository metadata"
+    ],
+    "locate_documentation": [
+      "repository instructions",
+      "README",
+      "project documentation"
+    ],
+    "locate_code": [
+      "source tree",
+      "definitions",
+      "call sites"
+    ],
+    "check_current_state": [
+      "branch or commit metadata",
+      "relevant issue, pull request, or check records"
+    ],
+    "request_change": [
+      "current implementation",
+      "applicable instructions",
+      "user approval scope"
+    ]
+  }
 }

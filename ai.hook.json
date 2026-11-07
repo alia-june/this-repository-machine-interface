@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "kind": "repository_orientation_hook",
-  "execution_mode": "declarative",
+  "execution_mode": "reference_only",
   "manifest": "readme.json",
   "steps": [
     {
@@ -29,5 +29,28 @@
     "scope": "read_only_orientation",
     "on_missing_access": "Report the access limitation and stop the affected orientation step.",
     "beyond_orientation": "Follow the user's scope and approval requirements and the selected project's applicable instructions before proceeding."
-  }
+  },
+  "operation_rules": {
+    "classification": "Identify each operation in the chat request and map it to a manifest intent when applicable. Preserve the order of distinct operations.",
+    "target": "Use the repository and revision identified by the user or chat. Ask when ambiguity affects the answer.",
+    "evidence": "For each operation, identify the evidence required and describe the lookup steps. Use evidence already available to the calling AI. Cite the source and revision for each supported answer.",
+    "missing_evidence": "State what is missing and how an authorized caller can obtain it. Separate a verified answer from a lookup plan.",
+    "requested_change": "Describe the requested action, relevant sources, and applicable approval. Carry the request into the handoff."
+  },
+  "handoff": {
+    "next": "return_control_to_calling_ai",
+    "fields": [
+      "request",
+      "operations",
+      "repository",
+      "revision",
+      "answers",
+      "sources",
+      "lookup_steps",
+      "open_questions",
+      "approval_requirements"
+    ],
+    "continuation": "The calling AI resumes the chat under the user instructions and applicable repository rules."
+  },
+  "interface_boundary": "These records describe decisions and evidence paths. The interface has no executable actions or tool bindings."
 }
