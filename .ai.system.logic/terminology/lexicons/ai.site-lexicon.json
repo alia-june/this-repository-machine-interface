@@ -758,7 +758,10 @@
             "guide_reference": {
               "path": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
               "section": "project-seed-extraction"
-            }
+            },
+            "aliases": [
+              "recovery and recomposition"
+            ]
           },
           "project_seed": {
             "label": "Project seed",

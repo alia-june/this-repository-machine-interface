@@ -1,6 +1,6 @@
 # Decomposting Theory
 
-Decomposting belongs to the family of **theories of development**, alongside approaches such as rapid development. It is also called **recovery and recomposition**. The approach is agnostic about the kind of material being developed. It applies to material you own or material you are permitted to use for the intended purpose. The applicable rules and authority depend on the material and the proposed action.
+Decomposting belongs to the family of **theories of development**, alongside approaches such as rapid development. **Decomposting === recovery and recomposition.** The two names identify the same theory, recursive method, and ethic of proper construction. The approach is agnostic about the kind of material being developed. It applies to material you own or material you are permitted to use for the intended purpose. The applicable rules and authority depend on the material and the proposed action.
 
 ## Theory, recursive method, and ethic
 
