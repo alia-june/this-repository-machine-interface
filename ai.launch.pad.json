@@ -613,7 +613,21 @@
           "continuation": "The calling AI resumes the chat under the user instructions and applicable repository rules."
         },
         "interface_boundary": "These records describe decisions and evidence paths. The interface has no executable actions or tool bindings.",
-        "landing_pad": "ai.landing.pad.json"
+        "landing_pad": "ai.landing.pad.json",
+        "project_seed_extraction": {
+          "status": "requires_separate_scope",
+          "guide": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
+          "section": "project-seed-extraction",
+          "method": "transmigration_and_decomposting",
+          "scope_inputs": [
+            "selected project and pinned source revision",
+            "intended seed and its use",
+            "extraction boundary",
+            "applicable authority and explicit approval",
+            "required evidence and validation"
+          ],
+          "handoff": "Return the proposed scope and unresolved requirements to the calling AI before extraction."
+        }
       }
     },
     "block-3": {

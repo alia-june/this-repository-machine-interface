@@ -745,6 +745,34 @@
               "path": ".ai.system.logic/state/examples/ai.mill-history-germ.json",
               "selector": "/construct/block-2/arbitrary-data"
             }
+          },
+          "decomposting": {
+            "label": "Decomposting",
+            "definition": "Decomposition, composting, and composition occurring together while examining source relationships, selecting what can feed new growth, and shaping a seed candidate.",
+            "source_references": [
+              {
+                "kind": "user_supplied_design_direction",
+                "summary": "Decomposting combines decomposition, composting, and composition at once. Any project may be considered for seed extraction through transmigration and decomposting."
+              }
+            ],
+            "guide_reference": {
+              "path": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
+              "section": "project-seed-extraction"
+            }
+          },
+          "project_seed": {
+            "label": "Project seed",
+            "definition": "An artifact extracted from a selected project through transmigration and decomposting for an intended use. The site uses a separate landing seed to derive its AI landing germ.",
+            "source_references": [
+              {
+                "kind": "user_supplied_design_direction",
+                "summary": "Decomposting combines decomposition, composting, and composition at once. Any project may be considered for seed extraction through transmigration and decomposting."
+              }
+            ],
+            "guide_reference": {
+              "path": ".ai.system.logic/human.SYSTEMS_DEPLOYMENT.md",
+              "section": "project-seed-extraction"
+            }
           }
         }
       }

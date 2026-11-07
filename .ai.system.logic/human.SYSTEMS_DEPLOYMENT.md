@@ -76,6 +76,14 @@ The [Mill History germ](state/examples/ai.mill-history-germ.json) starts with an
 
 If the dependent step fails, preserve the last committed germ and record the attempt separately for the surrounding system to handle. The compact germ reduces the initial record size. Actual memory use depends on how the receiving system loads references and tools.
 
+## Project seed extraction
+
+This repository is a machine interface. Its expanded heuristic landing seed supplies the compact AI landing germ. Any project may be considered as a source of a separate **project seed** through **transmigration and decomposting**.
+
+**Decomposting** is decomposition, composting, and composition happening together. Examine the project's parts and relationships while deciding what can feed new growth and how to compose that material into a seed. As the candidate takes shape, it can change which source boundaries and relationships need further examination.
+
+Before extraction, identify the selected project and pinned source revision, the intended seed and its use, the extraction boundary, the applicable authority and approval, and the evidence needed for validation. The [launch pad](../ai.launch.pad.json) describes the scope to hand back to the calling AI before extraction.
+
 ## Eject a seed after review
 
 Eject the smallest portable record that lets another workplace understand and repeat the approved method. Use the [xOSG-0 Seed stage][seed] as the reduction criterion. For the Mill Factory example, an illustrative deployment seed could carry:
