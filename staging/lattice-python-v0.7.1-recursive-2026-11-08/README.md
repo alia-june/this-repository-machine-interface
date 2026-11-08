@@ -22,6 +22,6 @@ This staging directory is a publication index/evidence handoff, not an executed 
 
 The original audit reported **167/167** suite tests, **51/51** regeneration parity and **86.94%** combined measured coverage on Linux with Python 3.13.5. Native Windows execution, Crete enforcement and independent authorization remain unverified.
 
-## Optional exact-byte ZIP upload helper
+## Archive transfer boundary
 
-The [PowerShell upload helper](Upload-Verified-ZIPs.ps1) performs local source SHA-256 checks, pushes the two ZIP files to this staging branch, and downloads the resulting GitHub file content for independent SHA-256 comparison. It has **not been executed here**; it requires the two local ZIP files, `git`, `gh`, a linked GitHub account with write access, and an appropriate Git commit identity. The public index must be updated after a successful upload before reporting that the archives are hosted.
+Uploading archives is operator-side operational tooling, separate from this public Lattice project staging index. The public documentation retains source checksums, an archive-transfer checklist, and verification results; it does not distribute an authenticated uploader script. The two ZIP archives remain **NOT_UPLOADED** until separately verified on GitHub.
