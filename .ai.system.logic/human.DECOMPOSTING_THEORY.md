@@ -1,5 +1,7 @@
 # Decomposting Theory
 
+[Proper Composition](https://github.com/alia-june/ethical-and-intellectual-theory/tree/main/personal-dossier/musings/proper-composition) is a worked example in LEGO.
+
 Decomposting belongs to the family of **theories of development**, alongside approaches such as rapid development. **Decomposting === recovery and recomposition.** The two names identify the same theory, recursive method, and ethic of proper construction. The approach is agnostic about the kind of material being developed. It applies to material you own or material you are permitted to use for the intended purpose. The applicable rules and authority depend on the material and the proposed action.
 
 ## Theory, recursive method, and ethic
