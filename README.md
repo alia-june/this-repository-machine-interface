@@ -27,3 +27,5 @@ Continue with the [human orientation guide](.ai.system.logic/human.README.md), o
 - [Original Lattice universal construct JSON](.ai.system.logic/ai.Lattice_Universal_Construct_Empty_Blocks.json)
 
 **Archive status:** The complete implementation ZIP and recursive harness ZIP have **not yet been uploaded to GitHub**. The links above open the staged documentation/evidence, not downloadable project archives. Local harness results do not establish Windows-native security, production admission, or Crete enforcement.
+
+<!-- Attribution note: "The Man-Machine" (1978) is a work by Kraftwerk. The reference to "man-machine" is credited to Kraftwerk; no affiliation or endorsement is implied. -->
