@@ -10,6 +10,8 @@ Decomposting belongs to the family of **theories of development**, alongside app
 
 **As an ethic**, decomposting governs what may be carried forward, how the material may be used, and what can be claimed about the result. Preserve provenance, respect the purpose and limits of permission, and assess the resulting construction before accepting or ejecting it as a seed.
 
+*cursus aliosque recursus* `|<!\\-o)`
+
 ## The quadrangle of proper construction
 
 | Corner | Question |
