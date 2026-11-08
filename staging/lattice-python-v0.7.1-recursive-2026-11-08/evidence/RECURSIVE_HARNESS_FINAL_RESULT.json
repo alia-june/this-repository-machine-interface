@@ -1,0 +1,65 @@
+{
+  "original_suite_tests": 167,
+  "original_suite_status": "PASS",
+  "original_suite_modes": {
+    "baseline": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 15.841,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 122
+    },
+    "loose": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.041,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 10
+    },
+    "strict": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 3.37,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 20
+    },
+    "torture": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 1.654,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 15
+    }
+  },
+  "recursive_file_audit_status": "PASS",
+  "source_manifest_files": 177,
+  "all_files": 178,
+  "json_files_parsed": 36,
+  "jsonl_records_parsed": 9076,
+  "python_files_compiled": 40,
+  "bitmap_planes": 41,
+  "bit_matrix_cells_exhaustively_compared": 1928476,
+  "bitmap_matrix_mismatches": 0,
+  "u64_rows_compared": 47036,
+  "u64_mismatches": 0,
+  "smoke_command_passed": 10,
+  "smoke_command_total": 10,
+  "coverage_cli_passed": 18,
+  "coverage_cli_total": 18,
+  "rebuilt_instrumentation_file_parity": 51,
+  "rebuilt_instrumentation_errors": [],
+  "snapshot_lock_regenerated_matches_original": true,
+  "source_manifest_changes_after_tests": [],
+  "combined_coverage_pct": 86.94101508916324,
+  "statement_coverage_pct": 90.59273422562141,
+  "branch_coverage_pct": 77.66990291262135,
+  "python_uncovered_statements": 246,
+  "python_uncovered_branches": 230,
+  "source_package_sha256": "b2b9cbbca9a646293c4951159acb44817804347b5ff4a11640ede0c34beca9e8",
+  "package_mutation_detected": false,
+  "overall_status": "PASS"
+}

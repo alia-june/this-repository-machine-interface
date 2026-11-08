@@ -1,0 +1,31 @@
+{
+  "profile": "LATTICE_GITHUB_STAGING_LEDGER_V0_1",
+  "date": "2026-11-08",
+  "repository": "alia-june/this-repository-machine-interface",
+  "staging_branch": "staging/lattice-python-v0.7.1-recursive-2026-11-08",
+  "project": {
+    "version": "v0.7.1",
+    "package_filename": "Lattice_Python_Front_API_Hardening_Strict_Loose_Torture_v0_7_1.zip",
+    "sha256": "b2b9cbbca9a646293c4951159acb44817804347b5ff4a11640ede0c34beca9e8",
+    "online_archive_status": "NOT_UPLOADED"
+  },
+  "recursive_harness": {
+    "filename": "Lattice_Recursive_Harness_2026-11-08_Evidence_And_Runner.zip",
+    "sha256": "c452362e7cdf5f87380c3a034c41482a187a0840be5bd095d3b7c8d3ffec4ec2",
+    "online_archive_status": "NOT_UPLOADED"
+  },
+  "evidence": {
+    "suite_total": 167,
+    "suite_passed": 167,
+    "cli_traces": 18,
+    "regenerated_files": 51,
+    "combined_coverage_pct": 86.94101508916324,
+    "platform": "Linux",
+    "native_windows": "UNVERIFIED"
+  },
+  "source_mutation": "NONE_PERFORMED",
+  "classification": "STAGED_DOCUMENTATION_ONLY",
+  "admission": "NOT_ADMITTED",
+  "publication": "NOT_RELEASED",
+  "authority": "NONE_GRANTED"
+}
