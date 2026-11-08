@@ -16,3 +16,14 @@ A request enters through [ingress](ai.ingress.json), proceeds to the [launch pad
 The landing seed supplies the AI germ. A **project seed** is a separate extraction through transmigration and decomposting, with its own selected source, intended use, authority, and evidence.
 
 Continue with the [human orientation guide](.ai.system.logic/human.README.md), or use the [project JSON map](.ai.system.logic/human.PROJECT_JSON_MAP.md) to find a specific record. Our developing technology is documented in [xOSG Prototype](https://github.com/alia-june/xOSG-prototype).
+
+## Lattice Python API — staging and verification
+
+**Candidate / not admitted / not canonical.** The [Lattice v0.7.1 staging index](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/README.md) records the Python front API architecture, exact source checksums, and recursive test evidence. The source JSON template remains unchanged.
+
+- [Python API project overview](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/PROJECT_README_v0_7_1.md)
+- [Recursive test report](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/evidence/RECURSIVE_HARNESS_REPORT.md) and [machine-readable result](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/evidence/RECURSIVE_HARNESS_FINAL_RESULT.json)
+- [Source archive SHA-256 checksums](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/SOURCE_SHA256SUMS.txt) and [upload checklist](https://github.com/alia-june/this-repository-machine-interface/blob/6244a863b18993299da6760a347a2d63163dc487/staging/lattice-python-v0.7.1-recursive-2026-11-08/ARCHIVE_UPLOAD_GUIDE.md)
+- [Original Lattice universal construct JSON](.ai.system.logic/ai.Lattice_Universal_Construct_Empty_Blocks.json)
+
+**Archive status:** The complete implementation ZIP and recursive harness ZIP have **not yet been uploaded to GitHub**. The links above open the staged documentation/evidence, not downloadable project archives. Local harness results do not establish Windows-native security, production admission, or Crete enforcement.
