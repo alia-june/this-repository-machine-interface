@@ -6,8 +6,9 @@ Audited against [`a716ffe`](https://github.com/alia-june/this-repository-machine
 
 1. Begin at the [root README](../README.md). The heuristic engine gets the expanded seed, the AI gets its compact germ, and a human continues with the guide.
 2. Follow [ingress](../ai.ingress.json) for admission, the [launch pad](../ai.launch.pad.json) for the operation, and [egress](../ai.egress.json) for the response and disclosure.
-3. For state-dependent operations, use the [state index](ai.MEMORY_STATE_ORCHESTRATION.json) to reach the state contract, sentinel rules, bindings, and examples. The sentinel determines which capability may be considered.
-4. Use construction contracts for reference, composition, and safe copy. Project seed and germ records are worked examples. Use the lexicon for definitions and follow its governing links for operation rules.
+3. For a worked exchange, follow the [lookup contract guides](exchange/contracts/) and the [paired examples](exchange/examples/). Admission, operation selection, and recipient disclosure are separate decisions.
+4. For state-dependent operations, use the [state index](ai.MEMORY_STATE_ORCHESTRATION.json) to reach the state contract, sentinel rules, bindings, and examples. The sentinel determines which capability may be considered.
+5. Use the construction contracts for reference, composition, and safe copy. Follow the [worked project seed](construction/examples/ai.repository-lookup-project-seed.json) and [germ](construction/examples/ai.repository-lookup-project-germ.json) to see what a receiving project must establish. Use the lexicon for definitions and follow its governing links for operation rules.
 
 ## Entry points
 
@@ -65,7 +66,7 @@ Audited against [`a716ffe`](https://github.com/alia-june/this-repository-machine
 
 ## Direct dependencies and unresolved conditions
 
-- [WORKSPACE_SEED.json](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json) is the pinned m.A.R.S. memory-state source owned by alia-june/xOSG-prototype. The local state contract describes how the receiving system uses it. The [source README](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/README.md) describes the upstream template and its authority boundary.
+- [WORKSPACE_SEED.json](https://github.com/alia-june/xOSG-prototype/blob/545dbf47c9ea33c09eb6e97d5536255344001cd5/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json) and its [source README](https://github.com/alia-june/xOSG-prototype/blob/545dbf47c9ea33c09eb6e97d5536255344001cd5/docs/systems-deployment/seeds/mars-workspace/README.md) were published on xOSG main by [squash commit 545dbf4](https://github.com/alia-june/xOSG-prototype/commit/545dbf47c9ea33c09eb6e97d5536255344001cd5). The [earlier review pin](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json) used by existing records identifies the same verified bytes. The [local state contract](state/contracts/ai.memory-state.json) describes the template and its receiving-system boundary.
 
 A template placeholder or illustrative unbound capability is a declared condition. Resolve it only when the relevant source, binding, evidence, and authority have been established.
 

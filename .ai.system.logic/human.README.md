@@ -2,19 +2,24 @@
 
 mARS provides machine-readable reference material for AI handling repository requests in chat across the alia-june GitHub account.
 
-- [ai.landing.pad.json](../ai.landing.pad.json) is the first machine entry point. It describes repository discovery and indexes the kinds of requests an AI might receive.
-- [ai.launch.pad.json](../ai.launch.pad.json) describes how to identify the requested operations, locate evidence, give an answer or lookup steps, and return control to the calling AI.
+## Follow a request
 
-Both files are reference data. The calling AI uses the handoff to continue under the user's instructions and applicable repository rules.
+1. Start with the expanded landing seed for heuristic orientation or its compact germ for an AI. Resolve the route needed for the current request.
+2. Follow ingress to establish the request, target, applicable source revision, and authority. An admitted request proceeds to launch, where the applicable operation and evidence are identified.
+3. Follow egress to correlate the response to the request and check disclosure. Return a cited answer, lookup steps, clarification, or a blocked outcome as appropriate. The calling AI receives the handoff and continues under the applicable user and repository rules.
+
+Use the [project JSON map](human.PROJECT_JSON_MAP.md) when you need the governing record behind a step.
 
 ## Systems Deployment
 
 [Grow a workplace, instrument a tool, and eject a seed](human.SYSTEMS_DEPLOYMENT.md). Start with the instrumentation warning and follow the worked Mill Factory example.
+
 ## Lattice entry points
 
-Read each machine record from **construct.block-2.arbitrary-data**. The four root files have distinct roles.
+Read each machine record from **construct.block-2.arbitrary-data**. The five root JSON files have distinct roles.
 
-- [Landing pad](../ai.landing.pad.json) establishes repository context.
+- [Landing seed](../ai.landing.pad.json) establishes repository context for a heuristic engine.
+- [Compact AI germ](../ai.landing.pad.low-mem.json) provides the small first read, a pinned seed reference, and live routes.
 - [Launch pad](../ai.launch.pad.json) describes the requested operation and handoff.
 - [Ingress](../ai.ingress.json) describes what may enter and the conditions for accepting it.
 - [Egress](../ai.egress.json) describes what may leave and the evidence and disclosure conditions that accompany it.
@@ -34,6 +39,10 @@ The [memory-state orchestration index](ai.MEMORY_STATE_ORCHESTRATION.json) point
 See the [site lexicon](terminology/lexicons/ai.site-lexicon.json) for shared terms. Find a term by its ID under construct.block-2.arbitrary-data.terms. Follow its source references for the governing material.
 
 See the [safe-copy contract](construction/contracts/ai.safe-copy.json) and [receipt form](construction/receipts/ai.safe-copy-receipt.json) for the source, destination, and verification boundaries of a bundle copy.
+
+## Project seed extraction
+
+The expanded landing seed supplies the AI germ. Extract a separate project seed through transmigration and decomposting after establishing the selected project and pinned source, intended use, extraction boundary, explicit authority, and validation evidence. The [Systems Deployment guide](human.SYSTEMS_DEPLOYMENT.md#project-seed-extraction) walks through the lookup project seed and germ. The [theory](human.DECOMPOSTING_THEORY.md) explains the method and its decision boundaries.
 
 ## Human-readable JSON records
 

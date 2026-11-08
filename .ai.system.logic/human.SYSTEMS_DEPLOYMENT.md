@@ -7,7 +7,7 @@
 
 ## Grow a workplace around one useful task
 
-Start with the [portable m.A.R.S. v0.3.0 memory state](https://github.com/alia-june/xOSG-prototype/blob/a73a88a55d605f8d333ad1a53ca5a9f634023a15/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json), staged in [xOSG PR #16](https://github.com/alia-june/xOSG-prototype/pull/16). The receiving workplace supplies local goals, authority, and resource bindings.
+Start with the [portable m.A.R.S. v0.3.0 memory state](https://github.com/alia-june/xOSG-prototype/blob/545dbf47c9ea33c09eb6e97d5536255344001cd5/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json), published on xOSG main by [squash commit 545dbf4](https://github.com/alia-june/xOSG-prototype/commit/545dbf47c9ea33c09eb6e97d5536255344001cd5). The receiving workplace supplies local goals, authority, and resource bindings.
 
 Declare the task, sources and revisions, operating rules, available capabilities, permitted destinations, and acceptance evidence. Keep source separate from active work and retained receipts. Start with one declared tool and observe its existing contract before proposing any controller. A change to the workplace itself needs its own scope and approval. See [How to grow a living tooling workspace][workspace] and [How to instrument a tool][instrument].
 
