@@ -609,9 +609,9 @@
             ]
           },
           "workplace_seed": {
-            "status": "public_review",
+            "status": "published_main",
             "repository": "alia-june/xOSG-prototype",
-            "revision": "a73a88a55d605f8d333ad1a53ca5a9f634023a15",
+            "revision": "545dbf47c9ea33c09eb6e97d5536255344001cd5",
             "path": "docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json",
             "review_url": "https://github.com/alia-june/xOSG-prototype/pull/16"
           },
