@@ -17,6 +17,10 @@ The landing seed supplies the AI germ. A **project seed** is a separate extracti
 
 Continue with the [human orientation guide](.ai.system.logic/human.README.md), or use the [project JSON map](.ai.system.logic/human.PROJECT_JSON_MAP.md) to find a specific record. Our developing technology is documented in [xOSG Prototype](https://github.com/alia-june/xOSG-prototype).
 
+## Theory at the front door — Lunar Flower AI Seed
+
+[Read the Lunar Flower AI Seed: Expert-System Contract](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/blue-prints/LUNAR_FLOWER_AI_SEED_EXPERT_SYSTEM_CONTRACT.md). The proposed design places AI under an expert-system contract for bounded orchestration, requires tools and structure to be constructed from the ground up, and reserves generative synthetic decision-making for a contracted last-resort candidate. This is a **theory reference**, not a change to the existing ingress/launch/egress JSON contracts or an activated runtime policy.
+
 ## Publication phase: Stage 0 site hydration
 
 The current cross-repository effort is **Stage 0: completing public site hydration and publication of eligible theory and proof-of-concept material** following EOL simulation research. **Stage 1: evidence-bound programmatic rehydration of code through expert systems** is planned, with synthetic generative text restricted to a last-resort, separately reviewed candidate. The machine interface is an orientation and admission record, not proof that Stage 1 exists as a general runtime. [Public phase roadmap](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md). Private data is excluded from public release.
