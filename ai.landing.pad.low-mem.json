@@ -19,6 +19,29 @@
     },
     "block-2": {
       "arbitrary-data": {
+        "mars_workspace_seed_navigation": {
+          "purpose": "discover_mars_workspace_seed",
+          "mode": "reference_only",
+          "schema": "mars-tool-less-core-seed/0.3.0",
+          "seed_status": "UNINSTANTIATED_TEMPLATE",
+          "primary_source": {
+            "repository": "dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace",
+            "path": "seed/WORKSPACE_SEED.json",
+            "url": "https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/seed/WORKSPACE_SEED.json"
+          },
+          "verified_same_content_copy": {
+            "repository": "alia-june/xOSG-prototype",
+            "path": "docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json",
+            "url": "https://github.com/alia-june/xOSG-prototype/blob/main/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json"
+          },
+          "observed_matching_git_blob_sha": "b3b0d45b11e840e7d10e4e048f3b51d2a4426c48",
+          "local_preferred_reference": "verified_same_content_copy",
+          "admission": "NO_AUTOMATIC_IMPORT_OR_INSTANTIATION",
+          "effect_authority": "NONE_CONFERRED",
+          "on_reference_failure": "STOP_DEPENDENT_STEP_AND_REPORT_UNRESOLVED",
+          "note": "These are navigation references, not a second landing seed or automatic workspace deployment. Revalidate revision, source and access before using."
+        },
+
         "schema_version": "1.0",
         "kind": "ai_low_memory_landing_pad",
         "repository": "alia-june/this-repository-machine-interface",
