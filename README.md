@@ -30,6 +30,12 @@ Both this repository's [machine ingress](ai.ingress.json), [heuristic landing pa
 
 The two JSON files were retrieved through both accounts and had the same Git blob SHA (`b3b0d45b11e840e7d10e4e048f3b51d2a4426c48`) when checked. Their content is a **tool-less, uninstantiated template**, not an agent runtime, deployed workspace, active mission, or authorization to operate. The local ingress still governs request admission. Seed orientation, workspace instantiation, authority assignment, and resource binding remain distinct operations. If a reference cannot be resolved, stop the dependent operation and report it instead of inventing a substitute.
 
+## External errors and lessons — proposed preproduction resource
+
+[Development plan](https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/resources/EXTERNAL_ERROR_LESSON_REGISTRY.md) · [Machine-readable registry contract](https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/resources/EXTERNAL_ERROR_LESSON_REGISTRY_CONTRACT.json).
+
+This is a proposed **external error/lesson evidence service** for a microcontroller or developer-board host. A future receiver would retrieve applicable historical errors, reviewed lessons, claims, canonical conflicts and regression-test references before production admission. It must check sources, evidence coverage and freshness; the registry must not self-authorize a release. **The external host, service, write approval and enforceable production gate are not implemented.** The links are reference-only; the current machine-intake contracts remain unchanged. Unavailable evidence is not permission to invent a lesson or clear a production lock.
+
 ## Publication phase: Stage 0 site hydration
 
 The current cross-repository effort is **Stage 0: completing public site hydration and publication of eligible theory and proof-of-concept material** following EOL simulation research. **Stage 1: evidence-bound programmatic rehydration of code through expert systems** is planned, with synthetic generative text restricted to a last-resort, separately reviewed candidate. The machine interface is an orientation and admission record, not proof that Stage 1 exists as a general runtime. [Public phase roadmap](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md). Private data is excluded from public release.
