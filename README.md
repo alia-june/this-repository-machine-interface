@@ -21,6 +21,15 @@ Continue with the [human orientation guide](.ai.system.logic/human.README.md), o
 
 [Read the Lunar Flower AI Seed: Expert-System Contract](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/blue-prints/LUNAR_FLOWER_AI_SEED_EXPERT_SYSTEM_CONTRACT.md). The proposed design places AI under an expert-system contract for bounded orchestration, requires tools and structure to be constructed from the ground up, and reserves generative synthetic decision-making for a contracted last-resort candidate. This is a **theory reference**, not a change to the existing ingress/launch/egress JSON contracts or an activated runtime policy.
 
+## m.A.R.S. workspace seed — machine intake reference
+
+Both this repository's [machine ingress](ai.ingress.json), [heuristic landing pad](ai.landing.pad.json), and [AI landing germ](ai.landing.pad.low-mem.json) expose **reference-only** links to the portable m.A.R.S. v0.3.0 workspace seed:
+
+- [Source workspace seed — dastardlyrat](https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/seed/WORKSPACE_SEED.json)
+- [Matching workspace seed copy — alia-june](https://github.com/alia-june/xOSG-prototype/blob/main/docs/systems-deployment/seeds/mars-workspace/WORKSPACE_SEED.json)
+
+The two JSON files were retrieved through both accounts and had the same Git blob SHA (`b3b0d45b11e840e7d10e4e048f3b51d2a4426c48`) when checked. Their content is a **tool-less, uninstantiated template**, not an agent runtime, deployed workspace, active mission, or authorization to operate. The local ingress still governs request admission. Seed orientation, workspace instantiation, authority assignment, and resource binding remain distinct operations. If a reference cannot be resolved, stop the dependent operation and report it instead of inventing a substitute.
+
 ## Publication phase: Stage 0 site hydration
 
 The current cross-repository effort is **Stage 0: completing public site hydration and publication of eligible theory and proof-of-concept material** following EOL simulation research. **Stage 1: evidence-bound programmatic rehydration of code through expert systems** is planned, with synthetic generative text restricted to a last-resort, separately reviewed candidate. The machine interface is an orientation and admission record, not proof that Stage 1 exists as a general runtime. [Public phase roadmap](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md). Private data is excluded from public release.
