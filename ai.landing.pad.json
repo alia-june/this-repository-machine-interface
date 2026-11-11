@@ -538,6 +538,32 @@
     },
     "block-2": {
       "arbitrary-data": {
+        "lunar_flower_seed_navigation": {
+          "kind": "lunar_flower_ai_seed_navigation",
+          "mode": "reference_only",
+          "status": "THEORY_ONLY_NOT_ACTIVATED",
+          "seed": {
+            "repository": "alia-june/ethical-and-intellectual-theory",
+            "path": "blue-prints/LUNAR_FLOWER_AI_SEED_EXPERT_SYSTEM_CONTRACT.md",
+            "url": "https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/blue-prints/LUNAR_FLOWER_AI_SEED_EXPERT_SYSTEM_CONTRACT.md"
+          },
+          "project_theory_index": {
+            "repository": "alia-june/Lunar-Flower",
+            "path": "theory/README.md",
+            "url": "https://github.com/alia-june/Lunar-Flower/blob/main/theory/README.md"
+          },
+          "proposed_first_gates": [
+            "PRODUCTION_LOCK",
+            "REITERATION",
+            "HAND_OFF"
+          ],
+          "contract_role": "expert_system_orchestration",
+          "synthetic_generation": "LAST_RESORT_CANDIDATE_ONLY",
+          "effect": "NAVIGATION_ONLY",
+          "admission": "LOCAL_INGRESS_AUTHORITY_STILL_REQUIRED",
+          "on_reference_failure": "STOP_DEPENDENT_STEP_AND_REPORT_UNRESOLVED"
+        },
+
         "external_error_lesson_registry_resource": {
           "schema_version": "0.1.0",
           "kind": "external_error_lesson_registry_resource",
