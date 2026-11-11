@@ -538,6 +538,30 @@
     },
     "block-2": {
       "arbitrary-data": {
+        "external_error_lesson_registry_resource": {
+          "schema_version": "0.1.0",
+          "kind": "external_error_lesson_registry_resource",
+          "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+          "mode": "reference_only",
+          "resource": {
+            "repository": "dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace",
+            "specification_path": "resources/EXTERNAL_ERROR_LESSON_REGISTRY.md",
+            "specification_url": "https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/resources/EXTERNAL_ERROR_LESSON_REGISTRY.md",
+            "contract_path": "resources/EXTERNAL_ERROR_LESSON_REGISTRY_CONTRACT.json",
+            "contract_url": "https://github.com/dastardlyrat/m.A.R.S.-Persistent-Tool-less-Amorphous-Workspace/blob/main/resources/EXTERNAL_ERROR_LESSON_REGISTRY_CONTRACT.json",
+            "observed_contract_blob_sha": "dfea9c930e30766976a3d84c48280107736d6932"
+          },
+          "host_profile": "SENTINEL_UNRESOLVED",
+          "runtime_binding": "SENTINEL_UNRESOLVED",
+          "planned_preproduction_retrieval": true,
+          "retrieval_contract": "QUERY_PREPRODUCTION",
+          "receipt_scope": "EVIDENCE_FOR_REVIEW_ONLY",
+          "runtime_enforcement": "NOT_IMPLEMENTED",
+          "on_reference_resolution_failure": "STOP_DEPENDENT_STEP_AND_REPORT",
+          "on_runtime_registry_unavailability": "PRODUCTION_REMAINS_LOCKED_WHEN_INTEGRATED",
+          "authority": "NO_AUTOMATIC_IMPORT_OR_ADOPTION"
+        },
+
         "mars_workspace_seed_navigation": {
           "purpose": "discover_mars_workspace_seed",
           "mode": "reference_only",
