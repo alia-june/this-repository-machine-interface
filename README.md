@@ -38,7 +38,7 @@ This is a proposed **external error/lesson evidence service** for a microcontrol
 
 ## Publication phase: Stage 0 site hydration
 
-The current cross-repository effort is **Stage 0: completing public site hydration and publication of eligible theory and proof-of-concept material** following EOL simulation research. **Stage 1: evidence-bound programmatic rehydration of code through expert systems** is planned, with synthetic generative text restricted to a last-resort, separately reviewed candidate. The machine interface is an orientation and admission record, not proof that Stage 1 exists as a general runtime. [Public phase roadmap](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md). Private data is excluded from public release.
+**Public-facing Stage 0 is an asymmetric, ongoing site-hydration and publication activity.** The operator expects a **temporary pause for ancillary-site retooling**, not a permanent completion; the exact pause date is not established. **Each project has its own stages; there is no universal previous stage or mandatory shared Stage 1.** A separate code-rehydration workstream proposes evidence-bound expert-system and programmatic methods, with synthetic generative text restricted to a last-resort, separately reviewed candidate. The machine interface is an orientation and admission record, not proof that Stage 1 exists as a general runtime. [Public phase roadmap](https://github.com/alia-june/ethical-and-intellectual-theory/blob/main/research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md). Private data is excluded from public release.
 
 ## Lattice Python API — staging and verification
 
