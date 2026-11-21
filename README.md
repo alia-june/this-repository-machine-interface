@@ -9,7 +9,7 @@ IF a required reference fails to resolve THEN stop the dependent step AND report
 
 # This Repository Machine Interface
 
-Alia-June uses this interface as a shared front door for repository requests. A heuristic engine reads the expanded landing seed. An AI starts with the compact germ. Human readers can continue here.
+Alia-June uses this machine-readable interface as a shared front door for repository navigation and requests. A heuristic engine reads the expanded landing seed. An AI starts with the compact germ. Human readers can continue here.
 
 A request enters through [ingress](ai.ingress.json), proceeds to the [launch pad](ai.launch.pad.json) when admitted, and returns through [egress](ai.egress.json). The worked read-only lookup shows how to establish a target and source revision, return a cited answer when evidence permits, and hand back clarification or a blocked outcome when needed.
 
@@ -52,3 +52,9 @@ This is a proposed **external error/lesson evidence service** for a microcontrol
 **Archive status:** The complete implementation ZIP and recursive harness ZIP have **not yet been uploaded to GitHub**. The links above open the staged documentation/evidence, not downloadable project archives. Local harness results do not establish Windows-native security, production admission, or Crete enforcement.
 
 <!-- Attribution note: "The Man-Machine" (1978) is a work by Kraftwerk. The reference to "man-machine" is credited to Kraftwerk; no affiliation or endorsement is implied. -->
+
+## Related alia-june repositories
+
+- [ethical-and-intellectual-theory](https://github.com/alia-june/ethical-and-intellectual-theory) — Research ethics, consent, attribution, AI collaboration, and programming doctrine.
+- [Lunar-Flower](https://github.com/alia-june/Lunar-Flower) — Twin Lanterns ReShade shaders, screen-space indirect lighting, presets, and downloads.
+- [xOSG-prototype](https://github.com/alia-june/xOSG-prototype) — AI instrumentation, orchestration research, durable workspaces, language tooling, and deterministic computation.
