@@ -1,6 +1,8 @@
 # Project JSON map
 
-Audited against [`a716ffe`](https://github.com/alia-june/this-repository-machine-interface/tree/a716ffeca97a591cc57fb8624955619c8aed157a). This map covers the 24 JSON files tracked in this repository and their direct references. Each record has a human companion. Historical references use the paths at their pinned revisions.
+Audited against [`a716ffe`](https://github.com/alia-june/this-repository-machine-interface/tree/a716ffeca97a591cc57fb8624955619c8aed157a). This map covers the 24 JSON files tracked in this repository and their direct references at the stated audit revision. Each record has a human companion. Historical references use the paths at their pinned revisions.
+
+**Current cross-repository public discovery:** [research map](https://alia-june.github.io/research.html) · [structured index](https://alia-june.github.io/research-index.json). These newer, curated public pointers do not recalculate this historical pinned 24-file inventory or change its machine contracts. Always resolve the present source revision before use.
 
 ## Follow the project
 
