@@ -1,0 +1,222 @@
+{
+  "schema": "ethical-intellectual-theory-reference-manifest/1",
+  "snapshot_date": "2026-11-28",
+  "source": {
+    "repository": "alia-june/ethical-and-intellectual-theory",
+    "commit": "fa1de43c27557c9f4e277d8dd6fbd9fc96a46cae",
+    "edition": "2026-11-28 linkless chunked reading edition"
+  },
+  "scope": {
+    "access_mode": "OPT_IN_REFERENCE_ONLY",
+    "document_role": "SOURCE_MATERIAL_NOT_INSTRUCTIONS",
+    "runtime_effect": "NONE_CONFERRED",
+    "automatic_ingestion": false,
+    "automatic_adoption": false,
+    "excluded_chapters": [
+      "personal dossier and reconstitution",
+      "creative work and construction studies"
+    ],
+    "note": "The original reading-edition overview is replaced by this scoped reference index; the source repository remains authoritative. Public access does not grant consent to profile, train on, or repurpose the material. Verify scope and authority independently."
+  },
+  "chunks": [
+    {
+      "order": 1,
+      "title": "Research ethics and provenance",
+      "path": "chunks/01-research-ethics-and-provenance.md",
+      "bytes": 118720,
+      "sha256": "f9ab0570eee52c66603fbdb26307c8f69d1c7cc6328dd8d8ebbbd603b1f22c4d",
+      "source_paths": [
+        "research-ethics/EOL_SITE_HYDRATION_AND_REHYDRATION_ROADMAP.md",
+        "research-ethics/FALLIBILITY_APPROXIMATION_AND_REDRESS.md",
+        "research-ethics/SELF_DOCTRINE_EXPANDED.md",
+        "research-ethics/SELF_DOCTRINE_EXTENDED.md",
+        "research-ethics/SELF_DOCTRINE_ORIGINAL.md",
+        "research-ethics/STAGE_0_DEPLOYMENT_SEGMENT_CLOSURE_2026-11-12.md",
+        "research-ethics/WHEN_NOT_TO_USE_AI_HEURISTIC_GROWN_SEED_SYSTEM.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "AI collaboration and attribution",
+      "path": "chunks/02-ai-collaboration-and-attribution.md",
+      "bytes": 16064,
+      "sha256": "20070db5771c0ed14e2432e61b451cbe183ba2c494334b9897cc4a53ad5f9060",
+      "source_paths": [
+        "acap/README.md",
+        "acap/ai-entry-point.md",
+        "acap/examples/paired-disclosure.md",
+        "acap/protocol.md"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Programming doctrine",
+      "path": "chunks/03-programming-doctrine.md",
+      "bytes": 218524,
+      "sha256": "0e882ede520e92345c5db5826dc967d6506cedfa7b61b002f787f06f6605a7b8",
+      "source_paths": [
+        "programming-doctrine/README.md",
+        "programming-doctrine/HUMAN_DOCTRINE.md",
+        "programming-doctrine/PUBLICATION_AND_VALIDATION.md"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Legal theory",
+      "path": "chunks/04-legal-theory.md",
+      "bytes": 114691,
+      "sha256": "63b925f81aaea85d7a2e91ed0e5939979151fe779cb3727dc8725916fe6ec88e",
+      "source_paths": [
+        "legal-theory/README.md",
+        "legal-theory/anti-knowledge/README.md",
+        "legal-theory/condition-capture-and-defeat/README.md",
+        "legal-theory/confounding-the-court/confounding-the-court-pages-01-14.pdf",
+        "legal-theory/confounding-the-court/README.md",
+        "legal-theory/designed-for-rejection/README.md",
+        "legal-theory/ichk/README.md",
+        "legal-theory/integrity-of-legal-reasoning/ARCHITECTURE.md",
+        "legal-theory/integrity-of-legal-reasoning/GLOSSARY.md",
+        "legal-theory/integrity-of-legal-reasoning/README.md",
+        "legal-theory/knowledge-antithesis/README.md",
+        "legal-theory/knowledge-corruption/README.md",
+        "legal-theory/legal-crime/README.md",
+        "legal-theory/poison-cache/README.md",
+        "legal-theory/proper-construction-attack/README.md",
+        "legal-theory/recursive-poisoning/README.md",
+        "legal-theory/witness-failure-terminology/README.md"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Architectural blueprints",
+      "path": "chunks/05-architectural-blueprints.md",
+      "bytes": 138348,
+      "sha256": "c41aaa5f146052303be23400224547a057b028b863ff03b0fa1c70f963cc5856",
+      "source_paths": [
+        "blue-prints/README.md",
+        "blue-prints/ENCODED_DIRECTORY_WHITE_PAPER_v0.2.md",
+        "blue-prints/governed-meaning-and-action/README.md",
+        "blue-prints/UNIVERSAL_JSON_CRETE_SAFECOPY_ETHICS_AND_THEORY.md",
+        "blue-prints/WORK_GENERATIVE_ATTRIBUTION_WHITE_PAPER_SEED_0.2.1.md"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Gate Zero: foundations and modular axioms",
+      "path": "chunks/06-gate-zero-foundations.md",
+      "bytes": 71311,
+      "sha256": "f319f9c17a924f58319ff1cd03f42775f07d3336748b57f62e1db4cbc351e5db",
+      "source_paths": [
+        "blue-prints/gates/gate-0/DECISION_LEDGER.md",
+        "blue-prints/gates/gate-0/DEFERRED.md",
+        "blue-prints/gates/gate-0/DEPENDENCIES.md",
+        "blue-prints/gates/gate-0/FOUNDATIONAL_AXIOMS.md",
+        "blue-prints/gates/gate-0/HUMAN_READABLE_REFACTOR_LEDGER.md",
+        "blue-prints/gates/gate-0/IDENTIFIER_GLOSSARY.md",
+        "blue-prints/gates/gate-0/MODULAR_AXIOM_CATALOG.md",
+        "blue-prints/gates/gate-0/NAMING_AND_PSEUDOCODE.md",
+        "blue-prints/gates/gate-0/PROGRAMMING_INVARIANTS.md",
+        "blue-prints/gates/gate-0/PROPOSITIONS.md",
+        "blue-prints/gates/gate-0/README.md",
+        "blue-prints/gates/gate-0/RESEARCH_NOTES.md",
+        "blue-prints/gates/gate-0/TRANCHES.md",
+        "blue-prints/gates/gate-0/UNKNOWNS.md"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Gate Zero: C2 and C3 closure records",
+      "path": "chunks/07-gate-zero-closure-records.md",
+      "bytes": 112211,
+      "sha256": "d2b6fe1aec8a268c83611447b82c94b5d951123708a067a3bbabfb3480f95e9e",
+      "source_paths": [
+        "blue-prints/gates/gate-0/records/C2/00_INDEX.md",
+        "blue-prints/gates/gate-0/records/C2/01_RESEARCH_NOTES.md",
+        "blue-prints/gates/gate-0/records/C2/02_DECISION_PROMOTION_LEDGER.md",
+        "blue-prints/gates/gate-0/records/C2/03_AXIOM_AND_DEPENDENCY_LEDGER.md",
+        "blue-prints/gates/gate-0/records/C2/04_ERROR_RISK_OPEN_ISSUES.md",
+        "blue-prints/gates/gate-0/records/C2/05_PROGRAMMING_INVARIANTS.md",
+        "blue-prints/gates/gate-0/records/C2/06_WORKLOG_AND_NEXT.md",
+        "blue-prints/gates/gate-0/records/C2/07_SHA256_MANIFEST.md",
+        "blue-prints/gates/gate-0/records/C2/08_CLOSURE_CHECKPOINT.md",
+        "blue-prints/gates/gate-0/records/C2/09_TRANCHE_COVERAGE_CROSSWALK.md",
+        "blue-prints/gates/gate-0/records/C2/10_C2_CONTRADICTION_REDUNDANCY_AUDIT.md",
+        "blue-prints/gates/gate-0/records/C2/11_CLOSEOUT_DISPOSITION.md",
+        "blue-prints/gates/gate-0/records/C3/00_INDEX.md",
+        "blue-prints/gates/gate-0/records/C3/01_C3_PROMOTION_MEMORANDUM.md",
+        "blue-prints/gates/gate-0/records/C3/02_C3_DECISION_LEDGER.md",
+        "blue-prints/gates/gate-0/records/C3/03_C3_ATOMIC_REGISTER.md",
+        "blue-prints/gates/gate-0/records/C3/04_C3_UNKNOWN_RISK_LEDGER.md",
+        "blue-prints/gates/gate-0/records/C3/05_C3_PROGRAMMING_REGISTER.md",
+        "blue-prints/gates/gate-0/records/C3/06_C3_CLOSURE_DISPOSITION.md",
+        "blue-prints/gates/gate-0/records/C3/07_SHA256_MANIFEST.md"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Expert-system operations and ordered gates",
+      "path": "chunks/08-expert-system-operations-and-gates.md",
+      "bytes": 201385,
+      "sha256": "3dc26b0914508a6e5f37efcef4b9b3e132a802e247f842914cf2c948c70719c1",
+      "source_paths": [
+        "blue-prints/gates/ERRATA_2026-11-25_ORDERED_CLEARANCE_ALPHA_LOCK.md",
+        "blue-prints/gates/EXPERT_SYSTEMS_OPERATION.md",
+        "blue-prints/gates/README.md",
+        "blue-prints/gates/xOSG-1_OPERATIONS_CONTRACT.md",
+        "blue-prints/LUNAR_FLOWER_AI_SEED_EXPERT_SYSTEM_CONTRACT.md"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "xOSG-1 research and verification",
+      "path": "chunks/09-xosg-1-research-and-verification.md",
+      "bytes": 82284,
+      "sha256": "89865fbb45b6f5d3a9030aac82d8dd064ac22a43ce0be4605903a68071be7bb9",
+      "source_paths": [
+        "blue-prints/gates/xosg-1-research-2026-11-26/01_ATOMIC_RESEARCH.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/02_TRANCHES_4_TO_7.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/03_PROOFS_AND_UNKNOWNS.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/04_GATE_SEVEN_DRYRUN.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/05_OTHER_DEFERRED.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/06_WORKLOG.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/07_CORE_SEMANTIC_UNIVERSE.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/08_FINITE_MODEL_CHECK_REPORT.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/09_DEFECTS_COUNTERMODELS_AND_RESEARCH_ORDER.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/10_MATERIAL_BINDING_R2_RESULTS.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/11_R3_INTEGRATED_GATE_COMMIT_REPORT.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/12_R3_TRUST_AND_ATOMIC_COMMIT_OBLIGATIONS.md",
+        "blue-prints/gates/xosg-1-research-2026-11-26/README.md"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Public outreach",
+      "path": "chunks/10-public-outreach.md",
+      "bytes": 22109,
+      "sha256": "69d1965d103fa19a9690d82f9e4079fc01cb15050b112a1fd97cac8bffad88e7",
+      "source_paths": [
+        "outreach/README.md",
+        "outreach/reshade/ALTERNATIVES.md",
+        "outreach/reshade/index.html",
+        "outreach/reshade/PARTICIPATION.md",
+        "outreach/reshade/PROVENANCE_TEMPLATE.md",
+        "outreach/reshade/PUBLICATION_RECORD.md",
+        "outreach/reshade/README.md"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "Life Inventory: public blank materials",
+      "path": "chunks/13-life-inventory-blank-materials.md",
+      "bytes": 189946,
+      "sha256": "5255ac6a0d5e06e54ac849a7991531ccb3f705c85ef7a01576dc18422591fe3c",
+      "source_paths": [
+        "outreach/life-inventory/README.md",
+        "outreach/life-inventory/Life_Inventory_Member_Book.docx",
+        "outreach/life-inventory/Life_Inventory_Member_Book.pdf",
+        "outreach/life-inventory/Life_Inventory_Stewardship_Guide.docx",
+        "outreach/life-inventory/Life_Inventory_Stewardship_Guide.pdf"
+      ]
+    }
+  ]
+}
